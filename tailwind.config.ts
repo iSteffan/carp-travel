@@ -13,10 +13,16 @@ const config: Config = {
       'secondary-white': 'rgba(255, 255, 255, 0.20)',
       'accent-red': '#686870',
     },
+    fontFamily: {
+      serif: ['Inter', 'serif'],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      backgroundColor: {
+        green: '#00CC2D',
       },
     },
   },

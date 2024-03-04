@@ -17,12 +17,16 @@ const config: Config = {
       serif: ['Inter', 'serif'],
     },
     extend: {
+      content: {
+        mobileLeftBorder: 'url("/src/assets/icons/mobile-left-border.svg")',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       backgroundColor: {
         green: '#00CC2D',
+        trans: 'rgba(255, 255, 255, 0.10)',
       },
     },
   },

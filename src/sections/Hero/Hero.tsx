@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
 
         <div className="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
-          <h1 className="mb-[24px] text-[40px] leading-[1.4] tracking-[-1.6px] uppercase md:leading-normal md:text-[67px] md:tracking-[-2.68px] md:mb-[68px] lg:text-[98px] lg:tracking-[-3.92px] lg:mb-[144px]">
+          <h1 className="max-md:max-w-[280px] mb-[24px] text-[40px] leading-[1.4] tracking-[-1.6px] uppercase md:leading-normal md:text-[67px] md:tracking-[-2.68px] md:mb-[68px] lg:text-[98px] lg:tracking-[-3.92px] lg:mb-[144px]">
             Uncover <span className="font-thin">Carpathian’s Secrets</span>
           </h1>
           <p className="text-gray w-[157px] text-[10px] font-extralight leading-[1.6] md:w-[264px] md:text-[14px] md:leading-[1.14] md:tracking-[1.26px] lg:w-[608px] lg:text-[16px] lg:leading-[1.5] lg:tracking-[1.44px]">

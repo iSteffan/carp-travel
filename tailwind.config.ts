@@ -10,6 +10,7 @@ const config: Config = {
     },
     colors: {
       primary: '#FFFFFF',
+      gray: '#D9D9D9',
       'secondary-white': 'rgba(255, 255, 255, 0.20)',
       'accent-red': '#686870',
     },
@@ -17,6 +18,9 @@ const config: Config = {
       serif: ['Inter', 'serif'],
     },
     extend: {
+      lineHeight: {
+        normal: 'normal',
+      },
       content: {
         mobileLeftBorder: 'url("/src/assets/icons/mobile-left-border.svg")',
       },

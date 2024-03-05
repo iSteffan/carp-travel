@@ -9,7 +9,7 @@
   padding-bottom: 56px;
 
   max-width: 480px;
-  background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 50%, rgba(0, 37, 49, 0) 100%),
+  background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
     url('../../assets/images/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;

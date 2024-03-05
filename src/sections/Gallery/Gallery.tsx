@@ -1,6 +1,7 @@
 import css from './Gallery.module.css';
 import Image from 'next/image';
 import { GallerySlider1, GallerySlider2, GallerySlider3 } from '@/assets/images';
+import { GallerySliderTablet } from '@/components/GallerySlider/GallerySliderTablet';
 
 const Gallery = () => {
   return (
@@ -14,7 +15,7 @@ const Gallery = () => {
           OUR <span className="font-medium">GALLERY</span>
         </h2>
 
-        <div>
+        <div className="md:hidden">
           <ul className="flex flex-col gap-[22px]">
             <li>
               <Image
@@ -45,6 +46,8 @@ const Gallery = () => {
             </li>
           </ul>
         </div>
+
+        <GallerySliderTablet />
       </div>
     </section>
   );

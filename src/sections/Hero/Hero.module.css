@@ -86,11 +86,11 @@
 @media (min-width: 1280px) {
   .section {
     padding-top: 130px;
-    padding-left: 104px;
-    padding-right: 104px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 104px;
 
-    max-width: 1280px;
+    max-width: 1440px;
   }
 
   .button {

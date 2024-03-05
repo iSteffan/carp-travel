@@ -7,7 +7,11 @@ import { NavList } from '@/components/NavList';
 const Header = () => {
   return (
     <header>
-      <div className="flex justify-between items-center mx-auto max-w-[480px] md:max-w-[768px] lg:max-w-[1280px] px-[20px] pt-[36px] md:pt-[24px] md:px-[32px] lg:px-[102px]">
+      <div
+        className="flex justify-between items-center px-[20px] pt-[36px] mx-auto max-w-[480px] 
+        md:w-[768px] md:max-w-full md:pt-[24px] md:px-[32px] 
+        lg:w-[1235px] lg:max-w-full lg:px-0"
+      >
         <Link href="./">
           <Image
             src={logo}

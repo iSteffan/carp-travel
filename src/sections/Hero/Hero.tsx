@@ -6,7 +6,7 @@ const Hero = () => {
       <div
         className="grid grid-cols-1 gap-y-[24px] 
       md:grid-cols-[426px,230px] md:grid-rows-[88px,202px] md:gap-y-[56px] md:justify-between
-      lg:grid-cols-[646px,305px] lg:grid-rows-[123px,219px] lg:gap-y-[181px]"
+      lg:w-[1280px] lg:mx-auto lg:px-[24px] lg:grid-cols-[646px,305px] lg:grid-rows-[123px,219px] lg:gap-y-[181px]"
       >
         <div
           className="relative flex flex-wrap ml-auto w-[118px] h-[52px] 

@@ -8,9 +8,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { GallerySlider1, GallerySlider2, GallerySlider3 } from '@/assets/images';
 import { Navigation } from 'swiper/modules';
 import { NavBtn } from './NavBtn';
-import { galleryData } from '@/data/galleryData';
 
-export const GallerySliderTablet = () => {
+export const GallerySlider = () => {
   return (
     <Swiper
       //   autoHeight={true}
@@ -23,15 +22,6 @@ export const GallerySliderTablet = () => {
       modules={[Navigation]}
       className="mySwiper h-[307px]"
     >
-      {/* {galleryData.map((item, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className="img-overlay">
-              <Image src={item.img} alt={item.alt} className="w-full" />
-            </div>
-          </SwiperSlide>
-        );
-      })} */}
       <SwiperSlide>
         <div className="img-overlay">
           <Image src={GallerySlider1} alt="gallery slider image" />

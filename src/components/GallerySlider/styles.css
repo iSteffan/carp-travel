@@ -42,3 +42,13 @@
 .swiper-slide.swiper-slide-prev {
   flex-basis: 120px;
 }
+
+@media (min-width: 1280px) {
+  .swiper-slide .img-overlay {
+    width: 313px;
+  }
+
+  .swiper-slide.swiper-slide-active {
+    flex-basis: 606px;
+  }
+}

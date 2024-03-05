@@ -1,12 +1,12 @@
 import css from './Gallery.module.css';
 import Image from 'next/image';
 import { GallerySlider1, GallerySlider2, GallerySlider3 } from '@/assets/images';
-import { GallerySliderTablet } from '@/components/GallerySlider/GallerySliderTablet';
+import { GallerySlider } from '@/components/GallerySlider/GallerySlider';
 
 const Gallery = () => {
   return (
     <section className={css.section}>
-      <div className="lg:w-[1280px]">
+      <div className="lg:w-[1280px] lg:mx-auto">
         <h2
           className="mb-[24px] font-thin text-[40px] leading-[1.4] tracking-[-1.6px] 
         md:mb-[66px] md:w-[464px] md:mx-auto md:text-[67px] md:leading-normal md:tracking-[-2.68px] 
@@ -47,7 +47,7 @@ const Gallery = () => {
           </ul>
         </div>
 
-        <GallerySliderTablet />
+        <GallerySlider />
       </div>
     </section>
   );

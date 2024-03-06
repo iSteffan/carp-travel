@@ -8,9 +8,9 @@ const About = () => {
         lg:mx-auto lg:px-[24px] lg:w-[1280px] lg:grid-cols-[606px,24px,292px,14px,297px] lg:grid-rows-[16px,104px,136px,24px,192px,72px,72px]"
       >
         <h2
-          className="mb-[8px] text-[40px] font-thin leading-[1.4] tracking-[-1.6px]
-         md:mb-0 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-3 md:text-[67px] md:leading-normal md:tracking-[-2.68px] 
-         lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:text-[98px] lg:tracking-[-3.92px]"
+          className="title mb-[8px]
+         md:mb-0 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-3  
+         lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 "
         >
           WHO <span className="font-medium">WE ARE</span>
         </h2>

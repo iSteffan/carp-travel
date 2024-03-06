@@ -1,0 +1,38 @@
+.section {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 56px;
+
+  max-width: 480px;
+  background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+    url('../../assets/images/career.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section {
+    padding-top: 106px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 104px;
+
+    max-width: 1440px;
+  }
+}

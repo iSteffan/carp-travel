@@ -7,9 +7,9 @@ const Gallery = () => {
     <section className={css.section}>
       <div className="lg:w-[1280px] lg:mx-auto">
         <h2
-          className="mb-[24px] font-thin text-[40px] leading-[1.4] tracking-[-1.6px] 
-        md:mb-[66px] md:w-[464px] md:mx-auto md:text-[67px] md:leading-normal md:tracking-[-2.68px] 
-        lg:mb-[15px] lg:w-[633px] lg:ml-[23px] lg:text-[98px] lg:tracking-[-3.92px]"
+          className="title mb-[24px] 
+        md:mb-[66px] md:w-[464px] md:mx-auto  
+        lg:mb-[15px] lg:w-[633px] lg:ml-[23px] "
         >
           OUR <span className="font-medium">GALLERY</span>
         </h2>

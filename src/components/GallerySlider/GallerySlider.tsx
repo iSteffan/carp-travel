@@ -17,11 +17,9 @@ export const GallerySlider = () => {
       cssMode={true}
       slidesPerView={3}
       loop={true}
-      navigation={true}
       centeredSlides={true}
       spaceBetween={24}
-      modules={[Navigation]}
-      className="mySwiper gallery h-[307px]"
+      className="mySwiper gallery"
     >
       {/* {galleryData.map((item, index) => {
         return (

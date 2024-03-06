@@ -43,7 +43,16 @@
   flex-basis: 120px;
 }
 
+.swiper-slide.swiper-slide-next img,
+.swiper-slide.swiper-slide-prev img {
+  opacity: 0.5;
+}
+
 @media (min-width: 1280px) {
+  .swiper {
+    height: 429px;
+  }
+
   .swiper-slide .img-overlay {
     width: 313px;
   }

@@ -1,7 +1,9 @@
 'use client';
-import { CheckedIcon, UncheckedIcon } from '@/assets/icons';
+
+import InputMask from 'react-input-mask';
 import Image from 'next/image';
 import { useState } from 'react';
+import { CheckedIcon, UncheckedIcon } from '@/assets/icons';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 import css from './CareerForm.module.css';
@@ -24,8 +26,13 @@ const CareerForm = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
-
+  const onSubmit: SubmitHandler<Inputs> = data => {
+    const formattedData = {
+      ...data,
+      phone: `+38 ${data.phone}`,
+    };
+    console.log(formattedData);
+  };
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -45,6 +52,10 @@ const CareerForm = () => {
   const phoneLabel = errors.phone
     ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px]'
     : 'text-[14px] font-extralight leading-[2] tracking-[2.4px]';
+
+  const phoneInput = errors.phone
+    ? 'text-accent-red pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50'
+    : 'pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50';
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-[16px]">
@@ -84,11 +95,15 @@ const CareerForm = () => {
       <label className="relative flex flex-col gap-[4px]">
         <span className={phoneLabel}>Phone</span>
         <div className="relative">
-          <input
-            {...register('phone', { required: true })}
-            //   defaultValue="+38"
+          <InputMask
+            {...register('phone', {
+              required: true,
+              pattern: /^\(\d{3}\) \d{2} \d{2} \d{3}$/i,
+            })}
+            mask="(999) 99 99 999"
+            maskChar=""
             placeholder="(097) 12 34 567"
-            className="pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50"
+            className={phoneInput}
           />
           <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-extralight leading-[1.85]">
             + 38

@@ -12,7 +12,7 @@ const config: Config = {
       primary: '#FFFFFF',
       gray: '#D9D9D9',
       'secondary-white': 'rgba(255, 255, 255, 0.20)',
-      'accent-red': '#686870',
+      'accent-red': '#FF5757',
     },
     fontFamily: {
       serif: ['Inter', 'serif'],
@@ -31,6 +31,7 @@ const config: Config = {
       backgroundColor: {
         green: '#00CC2D',
         trans: 'rgba(255, 255, 255, 0.10)',
+        input: 'rgba(255, 255, 255, 0.05)',
       },
     },
   },

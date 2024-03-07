@@ -1,0 +1,23 @@
+.input-error::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  width: 18px;
+  height: 18px;
+  background-image: url('../../assets/icons/incorrect-input.svg');
+
+  transform: translateY(-50%);
+}
+
+.input-error {
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+
+  color: #ff5757;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 2;
+  letter-spacing: 2.4px;
+}

@@ -1,3 +1,4 @@
+import CareerForm from '@/components/CareerForm/CareerForm';
 import css from './CareerMobileFormSection.module.css';
 
 const CareerMobileFormSection = () => {
@@ -8,6 +9,7 @@ const CareerMobileFormSection = () => {
           Don&rsquo;t miss your opportunity! <br /> Fill out the form right now <br />
           and join our team!
         </p>
+        <CareerForm />
       </div>
     </section>
   );

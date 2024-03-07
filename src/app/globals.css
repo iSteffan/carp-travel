@@ -22,3 +22,13 @@ body {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }
 } */
+
+.input-error::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url('../assets/icons/incorrect-input.svg');
+}

@@ -5,7 +5,7 @@ const Career = () => {
   return (
     <section className={css.section}>
       <div
-        className="md:grid md:grid-cols-[211px,20px,127px,94px,21px,221px] md:grid-rows-[8px,73px,7px,5px,36px,56px,60px,32px,316px] 
+        className="md:grid md:grid-cols-[225px,16px,127px,94px,21px,221px] md:grid-rows-[8px,73px,7px,5px,36px,56px,60px,32px,316px] 
       lg:px-[24px] lg:grid-cols-[293px,246px,63px,24px,234px,79px,293px] lg:grid-rows-[16px,103px,24px,72px,11px,3px,380px]"
       >
         <h2

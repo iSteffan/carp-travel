@@ -38,28 +38,35 @@ const CareerForm = () => {
   };
 
   const fullnameLabel = errors.fullname
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px]';
+    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
+    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
 
   const emailLabel = errors.email
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px]';
+    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
+    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
 
   const positionLabel = errors.position
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px]';
+    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
+    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
 
   const phoneLabel = errors.phone
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px]';
+    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
+    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
 
   const phoneInput = errors.phone
     ? 'w-full text-accent-red pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50'
     : 'w-full pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50';
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-[16px] md:grid">
-      <label className="relative flex flex-col gap-[4px]">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col gap-[16px] 
+    md:grid md:grid-cols-[222px,20px,221px] md:grid-rows-[52px,16px,52px,16px,52px,16px,52px,9px,7px,29px,15px] md:gap-0"
+    >
+      <label
+        className="relative flex flex-col gap-[4px] 
+      md:col-start-1 md:col-span-1 md:row-start-1 md:row-span-1"
+      >
         <span className={fullnameLabel}>Full name</span>
         <input
           {...register('fullname', { required: true })}
@@ -69,7 +76,10 @@ const CareerForm = () => {
         {errors.fullname && <p className={css['input-error']}>Incorrect name</p>}
       </label>
 
-      <label className="relative flex flex-col gap-[4px]">
+      <label
+        className="relative flex flex-col gap-[4px] 
+      md:col-start-1 md:col-span-1 md:row-start-3 md:row-span-1"
+      >
         <span className={emailLabel}>E-mail</span>
         <input
           {...register('email', {
@@ -82,7 +92,10 @@ const CareerForm = () => {
         {errors.email && <p className={css['input-error']}>Incorrect email</p>}
       </label>
 
-      <label className="relative flex flex-col gap-[4px]">
+      <label
+        className="relative flex flex-col gap-[4px] 
+        md:col-start-1 md:col-span-1 md:row-start-5 md:row-span-1"
+      >
         <span className={positionLabel}>Position</span>
         <input
           {...register('position', { required: true })}
@@ -92,7 +105,10 @@ const CareerForm = () => {
         {errors.position && <p className={css['input-error']}>This field is required</p>}
       </label>
 
-      <label className="relative flex flex-col gap-[4px]">
+      <label
+        className="relative flex flex-col gap-[4px] 
+      md:col-start-1 md:col-span-1 md:row-start-7 md:row-span-1"
+      >
         <span className={phoneLabel}>Phone</span>
         <div className="relative">
           <InputMask
@@ -112,15 +128,21 @@ const CareerForm = () => {
         {errors.phone && <p className={css['input-error']}>Incorrect phone</p>}
       </label>
 
-      <label className="flex flex-col gap-[4px]">
+      <label
+        className="flex flex-col gap-[4px] 
+      md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-7"
+      >
         <span className="text-[14px] font-extralight leading-[2] tracking-[2.4px]">Message</span>
         <textarea
           {...register('message')}
-          className="p-[8px] h-[196px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50"
+          className="p-[8px] h-[196px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 md:h-full"
         />
       </label>
 
-      <label className="relative flex gap-[8px]">
+      <label
+        className="relative flex gap-[8px] 
+      md:col-start-1 md:col-span-1 md:row-start-10 md:row-span-2"
+      >
         <input
           type="checkbox"
           {...register('checkbox', {})}
@@ -136,12 +158,17 @@ const CareerForm = () => {
           )}
         </div>
 
-        <span className="mt-[2px] text-[12px] font-extralight leading-[1.83]">
+        <span className="mt-[2px] text-[12px] font-extralight leading-[1.83] md:mt-0">
           I confirm my consent to the processing of personal data.
         </span>
       </label>
 
-      <button className="ml-auto text-[30px]" type="submit" onClick={() => {}}>
+      <button
+        className="ml-auto text-[30px] 
+        md:col-start-3 md:col-span-1 md:row-start-9 md:row-span-2"
+        type="submit"
+        onClick={() => {}}
+      >
         SEND
       </button>
     </form>

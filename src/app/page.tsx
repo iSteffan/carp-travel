@@ -2,6 +2,7 @@ import {
   About,
   Career,
   CareerMobileFormSection,
+  Contacts,
   Gallery,
   Header,
   Hero,
@@ -19,6 +20,7 @@ export default function Home() {
         <Career />
         <CareerMobileFormSection />
         <Gallery />
+        <Contacts />
       </main>
     </>
   );

@@ -21,6 +21,11 @@ const config: Config = {
       lineHeight: {
         normal: 'normal',
       },
+      fontWeight: {
+        '100': '100',
+        '200': '200',
+        '400': '400',
+      },
       content: {
         mobileLeftBorder: 'url("/src/assets/icons/mobile-left-border.svg")',
       },

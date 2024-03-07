@@ -1,3 +1,4 @@
+import CareerForm from '@/components/CareerForm/CareerForm';
 import css from './Career.module.css';
 
 const Career = () => {
@@ -104,6 +105,10 @@ const Career = () => {
           Don&rsquo;t miss your opportunity! <br /> Fill out the form right now <br />
           and join our team!
         </p>
+
+        <div className="md:col-start-3 md:col-span-4 md:row-start-9 md:row-span-1 ">
+          <CareerForm />
+        </div>
       </div>
     </section>
   );

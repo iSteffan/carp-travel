@@ -54,11 +54,11 @@ const CareerForm = () => {
     : 'text-[14px] font-extralight leading-[2] tracking-[2.4px]';
 
   const phoneInput = errors.phone
-    ? 'text-accent-red pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50'
-    : 'pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50';
+    ? 'w-full text-accent-red pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50'
+    : 'w-full pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50';
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-[16px]">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-[16px] md:grid">
       <label className="relative flex flex-col gap-[4px]">
         <span className={fullnameLabel}>Full name</span>
         <input

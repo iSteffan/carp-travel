@@ -101,7 +101,7 @@ const Career = () => {
         md:col-start-3 md:col-span-2 md:row-start-7 md:row-span-1 
         lg:col-start-5 lg:col-span-1 lg:row-start-4 lg:row-span-1 lg:text-[18px] lg:leading-[1.33]"
         >
-          Don't miss your opportunity! <br /> Fill out the form right now <br />
+          Don&rsquo;t miss your opportunity! <br /> Fill out the form right now <br />
           and join our team!
         </p>
       </div>

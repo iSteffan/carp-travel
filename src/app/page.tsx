@@ -1,4 +1,12 @@
-import { About, Career, Gallery, Header, Hero, Services } from '@/sections';
+import {
+  About,
+  Career,
+  CareerMobileFormSection,
+  Gallery,
+  Header,
+  Hero,
+  Services,
+} from '@/sections';
 
 export default function Home() {
   return (
@@ -9,6 +17,7 @@ export default function Home() {
         <About />
         <Services />
         <Career />
+        <CareerMobileFormSection />
         <Gallery />
       </main>
     </>

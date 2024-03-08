@@ -4,7 +4,7 @@ import GalleryMobilePhotoList from '@/components/GalleryMobilePhotoList';
 
 const Gallery = () => {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="gallery">
       <div className="lg:w-[1280px] lg:mx-auto">
         <h2
           className="title mb-[24px] 

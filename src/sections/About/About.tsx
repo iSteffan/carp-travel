@@ -2,7 +2,7 @@ import css from './About.module.css';
 
 const About = () => {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="about">
       <div
         className=" md:grid md:grid-cols-[221px,20px,167px,76px,220px] md:grid-rows-[9px,72px,168px,16px,120px,60px,64px,60px] 
         lg:mx-auto lg:px-[24px] lg:w-[1280px] lg:grid-cols-[606px,24px,292px,14px,297px] lg:grid-rows-[16px,104px,136px,24px,192px,72px,72px]"

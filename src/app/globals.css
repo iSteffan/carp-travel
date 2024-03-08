@@ -32,3 +32,8 @@ body {
   height: 18px;
   background-image: url('../assets/icons/incorrect-input.svg');
 }
+
+.MuiPaper-root {
+  background: rgba(1, 10, 5, 0.75);
+  backdrop-filter: blur(25px);
+}

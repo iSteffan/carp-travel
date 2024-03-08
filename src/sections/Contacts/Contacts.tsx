@@ -10,8 +10,10 @@ const Contacts = () => {
           CONTACT <span className="font-500">US</span>
         </h2>
 
-        <ContactComponent />
-        <ContactForm />
+        <div className="lg:grid lg:grid-cols-[83px,311px,231px,607px] lg:grid-rows-[3px,353px,8px]">
+          <ContactComponent />
+          <ContactForm />
+        </div>
       </div>
     </section>
   );

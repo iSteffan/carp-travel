@@ -47,12 +47,20 @@ const CareerForm = () => {
     : 'text-[12px] font-extralight leading-[2] tracking-[2.4px]';
 
   const positionLabel = errors.position
-    ? 'text-accent-red text-[24px] font-extralight leading-[2] tracking-[2.4px]'
+    ? 'text-accent-red text-[12px] font-extralight leading-[2] tracking-[2.4px]'
     : 'text-[12px] font-extralight leading-[2] tracking-[2.4px]';
 
   const phoneLabel = errors.phone
     ? 'text-accent-red text-[12px] font-extralight leading-[2] tracking-[2.4px]'
     : 'text-[12px] font-extralight leading-[2] tracking-[2.4px]';
+
+  const fullnameInput = errors.fullname
+    ? 'w-full text-accent-red pl-[8px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]'
+    : 'w-full pl-[8px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]';
+
+  const emailInput = errors.email
+    ? 'w-full text-accent-red pl-[8px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]'
+    : 'w-full pl-[8px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]';
 
   const phoneInput = errors.phone
     ? 'w-full text-accent-red pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px] lg:pl-[58px]'
@@ -72,9 +80,9 @@ const CareerForm = () => {
         >
           <span className={fullnameLabel}>Full name</span>
           <input
-            {...register('fullname', { required: true })}
+            {...register('fullname', { required: true, pattern: /^[A-Za-z]+$/i })}
             placeholder="John Smith"
-            className="pl-[8px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]"
+            className={fullnameInput}
           />
           {errors.fullname && <p className={css['input-error']}>Incorrect name</p>}
         </label>
@@ -89,7 +97,7 @@ const CareerForm = () => {
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
             })}
             placeholder="johnsmith@email.com"
-            className="pl-[8px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]"
+            className={emailInput}
           />
           {errors.email && <p className={css['input-error']}>Incorrect email</p>}
         </label>

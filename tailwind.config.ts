@@ -13,6 +13,7 @@ const config: Config = {
       gray: '#D9D9D9',
       'secondary-white': 'rgba(255, 255, 255, 0.20)',
       'accent-red': '#FF5757',
+      inactive: 'rgba(255, 255, 255, 0.5)',
     },
     fontFamily: {
       serif: ['Inter', 'serif'],
@@ -25,6 +26,7 @@ const config: Config = {
         '100': '100',
         '200': '200',
         '400': '400',
+        '500': '500',
       },
       content: {
         mobileLeftBorder: 'url("/src/assets/icons/mobile-left-border.svg")',

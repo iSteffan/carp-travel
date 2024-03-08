@@ -3,16 +3,24 @@ import Image from 'next/image';
 export interface ServiceCardProps {
   data: {
     img: string;
+    bg: string;
     desc: string;
     alt: string;
     call: string;
     id: number;
   };
 }
-
 const ServiceCard = ({ data }: ServiceCardProps) => {
   return (
-    <div className="w-full pt-[54px] px-[20px] pb-[56px] grid grid-cols-1 grid-rows-[56px,24px,52px,16px,213px,12px,24px,24px,166px,34px,120px] bg-green">
+    <div
+      className="w-full pt-[54px] px-[20px] pb-[56px] grid grid-cols-1 grid-rows-[56px,24px,52px,16px,213px,12px,24px,24px,166px,34px,120px] bg-no-repeat bg-cover bg-center"
+      style={{
+        background: `linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)), url(${data.bg})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}
+    >
       <h2
         className="row-start-1 row-end-2 text-[40px] font-100 leading-[1.4] tracking-[-1.6px] 
       md:text-[67px] md:leading-normal md:tracking-[-2.68px]

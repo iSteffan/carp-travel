@@ -134,7 +134,7 @@ const CareerForm = () => {
           <span className="text-[12px] font-extralight leading-[2] tracking-[2.4px]">Message</span>
           <textarea
             {...register('message')}
-            className="p-[8px] h-[196px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 md:h-full"
+            className="p-[8px] h-[196px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 md:h-full resize-none"
           />
         </label>
         <label

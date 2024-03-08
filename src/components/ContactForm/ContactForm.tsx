@@ -36,7 +36,7 @@ const ContactForm = () => {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-[16px] 
-    md:grid md:grid-cols-[222px,20px,221px] md:grid-rows-[52px,16px,52px,16px,52px,16px,52px,9px,7px,29px,15px] md:gap-0 
+    md:grid md:grid-cols-[222px,20px,463px] md:grid-rows-[52px,28px,52px,117px,16px,36px] md:gap-0 
     lg:grid-cols-[290px,24px,292px] lg:grid-rows-[56px,24px,56px,24px,56px,24px,56px,24px,12px,27px,21px]"
       >
         <label
@@ -69,20 +69,20 @@ const ContactForm = () => {
 
         <label
           className="flex flex-col gap-[4px] 
-      md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-7"
+      md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-4"
         >
           <span className="text-[12px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]">
             Message
           </span>
           <textarea
             {...register('message')}
-            className="p-[8px] h-[196px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 md:h-full"
+            className="p-[8px] h-[196px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 md:h-full resize-none"
           />
         </label>
 
         <button
           className="ml-auto text-[30px] 
-        md:col-start-3 md:col-span-1 md:row-start-9 md:row-span-2"
+        md:col-start-3 md:col-span-1 md:row-start-6 md:row-span-1"
           type="submit"
           onClick={() => {}}
         >

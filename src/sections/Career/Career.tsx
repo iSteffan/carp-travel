@@ -110,7 +110,9 @@ const Career = () => {
           className="md:col-start-3 md:col-span-4 md:row-start-9 md:row-span-1 
         lg:col-start-5 lg:col-span-3 lg:row-start-7 lg:row-span-1"
         >
-          <CareerForm />
+          <div className="max-md:hidden">
+            <CareerForm />
+          </div>
         </div>
       </div>
     </section>

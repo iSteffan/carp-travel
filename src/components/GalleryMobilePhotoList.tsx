@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { GallerySlider1, GallerySlider2, GallerySlider3 } from '@/assets/images';
 
-const GalleryMobilePhoto = () => {
+const GalleryMobilePhotoList = () => {
   return (
     <div className="md:hidden">
       <ul className="flex flex-col gap-[22px]">
@@ -37,4 +37,4 @@ const GalleryMobilePhoto = () => {
   );
 };
 
-export default GalleryMobilePhoto;
+export default GalleryMobilePhotoList;

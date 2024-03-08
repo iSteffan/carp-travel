@@ -39,20 +39,20 @@ const CareerForm = () => {
   };
 
   const fullnameLabel = errors.fullname
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
+    ? 'text-accent-red text-[12px] font-extralight leading-[2] tracking-[2.4px]'
+    : 'text-[12px] font-extralight leading-[2] tracking-[2.4px]';
 
   const emailLabel = errors.email
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
+    ? 'text-accent-red text-[12px] font-extralight leading-[2] tracking-[2.4px]'
+    : 'text-[12px] font-extralight leading-[2] tracking-[2.4px]';
 
   const positionLabel = errors.position
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
+    ? 'text-accent-red text-[24px] font-extralight leading-[2] tracking-[2.4px]'
+    : 'text-[12px] font-extralight leading-[2] tracking-[2.4px]';
 
   const phoneLabel = errors.phone
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
-    : 'text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
+    ? 'text-accent-red text-[12px] font-extralight leading-[2] tracking-[2.4px]'
+    : 'text-[12px] font-extralight leading-[2] tracking-[2.4px]';
 
   const phoneInput = errors.phone
     ? 'w-full text-accent-red pl-[40px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px] lg:pl-[58px]'
@@ -131,9 +131,7 @@ const CareerForm = () => {
           className="flex flex-col gap-[4px] 
       md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-7"
         >
-          <span className="text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]">
-            Message
-          </span>
+          <span className="text-[12px] font-extralight leading-[2] tracking-[2.4px]">Message</span>
           <textarea
             {...register('message')}
             className="p-[8px] h-[196px] text-[13px] font-extralight leading-[1.85] bg-input placeholder:opacity-50 md:h-full"
@@ -148,7 +146,7 @@ const CareerForm = () => {
             {...register('checkbox', {})}
             checked={isChecked}
             onChange={handleCheckboxChange}
-            className="w-[28px] opacity-0 lg:w-[30px]"
+            className="w-[28px] opacity-0 md:w-[30px]"
           />
           <div className="absolute top-0 left-0">
             {!isChecked ? (

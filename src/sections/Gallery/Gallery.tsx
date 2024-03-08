@@ -1,6 +1,6 @@
 import css from './Gallery.module.css';
 import { GallerySlider } from '@/components/GallerySlider/GallerySlider';
-import GalleryMobilePhoto from '@/components/GalleryMobilePhoto';
+import GalleryMobilePhotoList from '@/components/GalleryMobilePhotoList';
 
 const Gallery = () => {
   return (
@@ -14,7 +14,7 @@ const Gallery = () => {
           OUR <span className="font-medium">GALLERY</span>
         </h2>
 
-        <GalleryMobilePhoto />
+        <GalleryMobilePhotoList />
 
         <div className="max-md:hidden">
           <GallerySlider />

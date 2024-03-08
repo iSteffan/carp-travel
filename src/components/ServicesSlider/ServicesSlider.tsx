@@ -42,39 +42,91 @@ import { servicesData } from '@/data/servicesData';
 //     </Swiper>
 //   );
 // };
-import React, { useRef, useState } from 'react';
-import { Virtual, Navigation, Pagination, EffectFade } from 'swiper/modules';
+
+// ---------------------------------------------------------------------------------------------------------------test2
+// import React, { useRef, useState } from 'react';
+// import { Virtual, Navigation, Pagination, EffectFade } from 'swiper/modules';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// // Import Swiper styles
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+
+// import './styles.css';
+
+// export const ServicesSlider = () => {
+//   const [swiperRef, setSwiperRef] = useState(null);
+
+//   const slideTo = index => {
+//     swiperRef.slideTo(index - 1, 0);
+//   };
+
+//   return (
+//     <>
+//       <Swiper
+//         modules={[Virtual, EffectFade, Pagination]}
+//         onSwiper={setSwiperRef}
+//         effect={'fade'}
+//         slidesPerView={1}
+//         centeredSlides={true}
+//         spaceBetween={30}
+//         pagination={{
+//           clickable: true,
+//         }}
+//         navigation={true}
+//         virtual
+//         className="mySwiper service"
+//       >
+//         {servicesData.map((item, index) => {
+//           return (
+//             <SwiperSlide key={index} virtualIndex={index}>
+//               <ServiceCard data={item} />
+//             </SwiperSlide>
+//           );
+//         })}
+//         {/* {slides.map((slideContent, index) => (
+//           <SwiperSlide key={slideContent} virtualIndex={index}>
+//             {slideContent}
+//           </SwiperSlide>
+//         ))} */}
+//       </Swiper>
+
+//       <button onClick={() => slideTo(1)}>Slide 1</button>
+//       <button onClick={() => slideTo(2)}>Slide 2</button>
+//       <button onClick={() => slideTo(3)}>Slide 3</button>
+//       <button onClick={() => slideTo(4)}>Slide 4</button>
+//       <button onClick={() => slideTo(5)}>Slide 5</button>
+//     </>
+//   );
+// };
+
+// ---------------------------------------------------------------------------------------------------------------test3
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import './styles.css';
 
+// import required modules
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+
 export const ServicesSlider = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
-
-  const slideTo = index => {
-    swiperRef.slideTo(index - 1, 0);
-  };
-
   return (
     <>
       <Swiper
-        modules={[Virtual, EffectFade, Pagination]}
-        onSwiper={setSwiperRef}
-        effect={'fade'}
-        slidesPerView={1}
-        centeredSlides={true}
         spaceBetween={30}
+        effect={'fade'}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        virtual
-        className="mySwiper service"
+        modules={[EffectFade, Pagination]}
+        className="mySwiper"
       >
         {servicesData.map((item, index) => {
           return (
@@ -83,18 +135,7 @@ export const ServicesSlider = () => {
             </SwiperSlide>
           );
         })}
-        {/* {slides.map((slideContent, index) => (
-          <SwiperSlide key={slideContent} virtualIndex={index}>
-            {slideContent}
-          </SwiperSlide>
-        ))} */}
       </Swiper>
-
-      <button onClick={() => slideTo(1)}>Slide 1</button>
-      <button onClick={() => slideTo(2)}>Slide 2</button>
-      <button onClick={() => slideTo(3)}>Slide 3</button>
-      <button onClick={() => slideTo(4)}>Slide 4</button>
-      <button onClick={() => slideTo(5)}>Slide 5</button>
     </>
   );
 };

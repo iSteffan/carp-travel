@@ -11,7 +11,7 @@ export interface ServiceCardProps {
 
 const ServiceCard = ({ data }: ServiceCardProps) => {
   return (
-    <div className="w-full pt-[54px] px-[20px] pb-[56px] grid grid-cols-1 grid-rows-[56px,24px,52px,16px,213px,12px,24px,24px,166px,34px,120px]">
+    <div className="w-full pt-[54px] px-[20px] pb-[56px] grid grid-cols-1 grid-rows-[56px,24px,52px,16px,213px,12px,24px,24px,166px,34px,120px] bg-green">
       <h2
         className="row-start-1 row-end-2 text-[40px] font-thin leading-[1.4] tracking-[-1.6px] 
       md:text-[67px] md:leading-normal md:tracking-[-2.68px]

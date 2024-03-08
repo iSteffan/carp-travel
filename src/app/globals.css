@@ -33,7 +33,17 @@ body {
   background-image: url('../assets/icons/incorrect-input.svg');
 }
 
-.MuiPaper-root {
+/* .MuiPaper-root {
   background: rgba(1, 10, 5, 0.75);
   backdrop-filter: blur(25px);
+} */
+
+.active-pseudo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-image: url('../assets/icons/active-bullet.svg');
 }

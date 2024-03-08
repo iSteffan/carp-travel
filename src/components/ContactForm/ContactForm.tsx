@@ -24,11 +24,11 @@ const ContactForm = () => {
   };
 
   const fullnameLabel = errors.fullname
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
+    ? 'text-accent-red text-[12px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
     : 'text-[12px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
 
   const emailLabel = errors.email
-    ? 'text-accent-red text-[14px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
+    ? 'text-accent-red text-[12px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]'
     : 'text-[12px] font-extralight leading-[2] tracking-[2.4px] md:text-[12px]';
 
   const fullnameInput = errors.fullname

@@ -29,7 +29,7 @@ const config: Config = {
         '500': '500',
       },
       content: {
-        mobileLeftBorder: 'url("/src/assets/icons/mobile-left-border.svg")',
+        bullet: 'url("/icons/active-bullet.svg")',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

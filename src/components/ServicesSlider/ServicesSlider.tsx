@@ -3,6 +3,7 @@
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
+import clsx from 'clsx';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Pagination } from 'swiper/modules';
@@ -11,6 +12,8 @@ import './styles.css';
 
 import ServiceCard from '../ServiceCard/ServiceCard';
 import { servicesData } from '@/data/servicesData';
+import Image from 'next/image';
+import { ActiveBullet } from '@/assets/icons';
 
 export const ServicesSlider = () => {
   const [swiper, setSwiper] = useState(null);
@@ -50,18 +53,29 @@ export const ServicesSlider = () => {
       </Swiper>
       <div className="flex flex-col gap-[16px] absolute top-[475px] left-[20px] z-10 text-[20px] font-200 uppercase leading-[0.85]">
         {servicesData.map((item, index) => (
-          <span
+          <button
             key={index}
             onClick={() => handlePaginationClick(index)}
             // {index === activeIndex ? 'text-gray' : 'text-inactive'}
-            className={
-              index === activeIndex ? 'text-primary font-500 w-[200px]' : 'text-inactive w-[200px]'
-            }
+            className={clsx(
+              'flex items-center gap-[8px] w-[160px] text-start',
+              index === activeIndex ? 'text-primary font-500' : 'text-inactive'
+            )}
           >
+            {index === activeIndex && (
+              <Image src={ActiveBullet} alt="active slide pointer" width={6} height={6} />
+            )}
+
             {item.btn}
-          </span>
+          </button>
         ))}
       </div>
     </>
   );
 };
+// className={clsx(
+//   'relative w-[200px]',
+//   index === activeIndex
+//     ? 'before:content-bullet before:block before:w-[9px] before:h-[9px] before:absolute before:top-[50%] before:left-0 before:translate-y-[-50%] pl-[17px] text-primary font-500'
+//     : 'text-inactive'
+// )}

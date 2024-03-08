@@ -14,7 +14,7 @@ export const ContactComponent = () => {
           <a
             href="tel:+380981234567"
             aria-label="tel to +380981234567"
-            className="text-[14px] font-400 leading-[1.71]  lg:w-full
+            className="text-[14px] font-400 leading-[1.71] hover:underline
             md:text-[16px] md:leading-[1.5] 
             lg:text-[18px] lg:leading-[1.33]"
           >
@@ -23,7 +23,7 @@ export const ContactComponent = () => {
           <a
             href="tel:+380731234567"
             aria-label="tel to +380731234567"
-            className="text-[14px] font-400 leading-[1.71] 
+            className="text-[14px] font-400 leading-[1.71] hover:underline 
             md:text-[16px] md:leading-[1.5]
             lg:text-[18px] lg:leading-[1.33]"
           >
@@ -40,7 +40,7 @@ export const ContactComponent = () => {
         <a
           href="mailto:support@carptravel.com"
           aria-label="mail to support@carptravel.com"
-          className="text-[14px] font-400 leading-[1.71] 
+          className="text-[14px] font-400 leading-[1.71] hover:underline 
           md:text-[16px] md:leading-[1.5] 
           lg:text-[18px] lg:leading-[1.33]"
         >
@@ -59,7 +59,9 @@ export const ContactComponent = () => {
               <a
                 href="./"
                 aria-label="facebook link"
-                className="text-[14px] font-400 leading-[1.71] md:text-[16px] md:leading-[1.5] lg:text-[18px] lg:leading-[1.33]"
+                className="text-[14px] font-400 leading-[1.71] hover:underline 
+                md:text-[16px] md:leading-[1.5] 
+                lg:text-[18px] lg:leading-[1.33]"
               >
                 facebook
               </a>
@@ -68,7 +70,7 @@ export const ContactComponent = () => {
               <a
                 href="./"
                 aria-label="instagram link"
-                className="text-[14px] font-400 leading-[1.71] 
+                className="text-[14px] font-400 leading-[1.71] hover:underline 
                 md:text-[16px] md:leading-[1.5] 
                 lg:text-[18px] lg:leading-[1.33]"
               >
@@ -79,7 +81,7 @@ export const ContactComponent = () => {
               <a
                 href="./"
                 aria-label="youtube link"
-                className="text-[14px] font-400 leading-[1.71] 
+                className="text-[14px] font-400 leading-[1.71] hover:underline 
                 md:text-[16px] md:leading-[1.5] 
                 lg:text-[18px] lg:leading-[1.33]"
               >
@@ -90,7 +92,7 @@ export const ContactComponent = () => {
               <a
                 href="./"
                 aria-label="tiktok link"
-                className="text-[14px] font-400 leading-[1.71] 
+                className="text-[14px] font-400 leading-[1.71] hover:underline 
                 md:text-[16px] md:leading-[1.5] 
                 lg:text-[18px] lg:leading-[1.33]"
               >

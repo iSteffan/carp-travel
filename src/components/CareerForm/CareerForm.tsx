@@ -84,7 +84,12 @@ const CareerForm = () => {
             placeholder="John Smith"
             className={fullnameInput}
           />
-          {errors.fullname && <p className={css['input-error']}>Incorrect name</p>}
+          {errors.fullname && errors.fullname.type === 'required' && (
+            <p className={css['input-error']}>This field is required</p>
+          )}
+          {errors.fullname && errors.fullname.type === 'pattern' && (
+            <p className={css['input-error']}>Incorrect name</p>
+          )}
         </label>
         <label
           className="relative flex flex-col gap-[4px] 
@@ -99,7 +104,12 @@ const CareerForm = () => {
             placeholder="johnsmith@email.com"
             className={emailInput}
           />
-          {errors.email && <p className={css['input-error']}>Incorrect email</p>}
+          {errors.email && errors.email.type === 'required' && (
+            <p className={css['input-error']}>This field is required</p>
+          )}
+          {errors.email && errors.email.type === 'pattern' && (
+            <p className={css['input-error']}>Incorrect email</p>
+          )}
         </label>
         <label
           className="relative flex flex-col gap-[4px] 
@@ -133,7 +143,12 @@ const CareerForm = () => {
               + 38
             </p>
           </div>
-          {errors.phone && <p className={css['input-error']}>Incorrect phone</p>}
+          {errors.phone && errors.phone.type === 'required' && (
+            <p className={css['input-error']}>This field is required</p>
+          )}
+          {errors.phone && errors.phone.type === 'pattern' && (
+            <p className={css['input-error']}>Incorrect phone</p>
+          )}
         </label>
         <label
           className="flex flex-col gap-[4px] 

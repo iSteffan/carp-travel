@@ -1,6 +1,6 @@
-/* .service .swiper {
-  height: 739px;
-} */
+.service .swiper-pagination {
+  display: none;
+}
 
 /* .swiper-wrapper {
   width: 480px;

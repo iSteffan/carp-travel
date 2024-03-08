@@ -108,34 +108,55 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 
 import './styles.css';
+import { useState } from 'react';
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { EffectFade, Pagination } from 'swiper/modules';
 
 export const ServicesSlider = () => {
+  const [swiper, setSwiper] = useState(null);
+
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  };
+
+  const handlePaginationClick = index => {
+    if (swiper) {
+      swiper.slideTo(index);
+    }
+  };
   return (
     <>
       <Swiper
         spaceBetween={30}
         effect={'fade'}
-        pagination={{
-          clickable: true,
-        }}
+        onSwiper={s => setSwiper(s)}
+        pagination={pagination}
         modules={[EffectFade, Pagination]}
-        className="mySwiper"
+        className="mySwiper service"
       >
         {servicesData.map((item, index) => {
           return (
-            <SwiperSlide key={index} virtualIndex={index}>
+            <SwiperSlide key={index}>
               <ServiceCard data={item} />
             </SwiperSlide>
           );
         })}
       </Swiper>
+      <div className="flex flex-col gap-[16px] absolute top-[475px] left-[20px] z-1 text-[20px] font-200 uppercase leading-[0.85]">
+        {servicesData.map((item, index) => (
+          <span key={index} onClick={() => handlePaginationClick(index)}>
+            {item.btn}
+          </span>
+        ))}
+      </div>
     </>
   );
 };

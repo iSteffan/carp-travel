@@ -13,6 +13,8 @@ import TabletRightBorder from './tablet-right-border.svg';
 import MobileLeftBorder from './mobile-left-border.svg';
 import MobileRightBorder from './mobile-right-border.svg';
 
+import ActiveBullet from './active-bullet.svg';
+
 export {
   logo,
   InputValidation,
@@ -24,4 +26,5 @@ export {
   MobileRightBorder,
   CheckedIcon,
   UncheckedIcon,
+  ActiveBullet,
 };

@@ -6,6 +6,7 @@ export interface ServiceCardProps {
     desc: string;
     alt: string;
     call: string;
+    id: number;
   };
 }
 
@@ -13,14 +14,14 @@ const ServiceCard = ({ data }: ServiceCardProps) => {
   return (
     <div className="w-full pt-[54px] px-[20px] pb-[56px] grid grid-cols-1 grid-rows-[56px,24px,52px,16px,213px,12px,24px,24px,166px,34px,120px] bg-green">
       <h2
-        className="row-start-1 row-end-2 text-[40px] font-thin leading-[1.4] tracking-[-1.6px] 
+        className="row-start-1 row-end-2 text-[40px] font-100 leading-[1.4] tracking-[-1.6px] 
       md:text-[67px] md:leading-normal md:tracking-[-2.68px]
       lg:text-[98px] lg:tracking-[-3.92px]"
       >
-        WE <span className="font-medium">OFFER</span>
+        WE <span className="font-500">OFFER</span>
       </h2>
       <p className="text-[43px] font-thin text-end row-start-3 row-end-4">
-        01/<span className="text-secondary-white">05</span>
+        0{data.id}/<span className="text-secondary-white">05</span>
       </p>
 
       <Image

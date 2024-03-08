@@ -12,10 +12,10 @@ const Career = () => {
           className="title mb-[24px] md:col-start-1 md:col-span-4 md:row-start-1 md:row-span-2 md:mb-0 
         lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-2"
         >
-          Choose <span className="font-medium">US</span>
+          Choose <span className="font-500">US</span>
         </h2>
         <p
-          className="mb-[36px] ml-auto w-[179px] text-[14px] text-gray font-extralight leading-[1.43] 
+          className="mb-[36px] ml-auto w-[179px] text-[14px] text-gray font-200 leading-[1.43] 
         md:col-start-6 md:col-span-1 md:row-start-2 md:row-span-2 md:mb-0 md:w-full md:text-[13px] md:leading-[1.54] 
         lg:col-start-7 lg:col-span-1 lg:row-start-2 lg:row-span-2 lg:text-[18px] lg:leading-[1.33]"
         >
@@ -24,7 +24,7 @@ const Career = () => {
         </p>
 
         <p
-          className="ml-auto mb-[36px] w-[179px] text-[30px] font-extralight
+          className="ml-auto mb-[36px] w-[179px] text-[30px] font-200
         md:col-start-1 md:col-span-1 md:row-start-5 md:row-span-1 md:w-full md:m-0 md:text-right 
         lg:col-start-1 lg:col-span-1 lg:row-start-4 lg:row-span-1 lg:text-[36px] lg:leading-[1.08]"
         >
@@ -38,14 +38,14 @@ const Career = () => {
         >
           <li className="lg:flex lg:gap-[24px] lg:justify-end">
             <p
-              className="mb-[8px] text-[14px] leading-[1.43] font-normal 
+              className="mb-[8px] text-[14px] leading-[1.43] font-400 
             md:text-[16px] md:leading-[1.25]
             lg:mb-0 lg:text-[18px] lg:leading-[1.33]"
             >
               Professional development
             </p>
             <p
-              className="text-gray text-[12px] font-extralight leading-[1.67] 
+              className="text-gray text-[12px] font-200 leading-[1.67] 
             lg:w-[285px] lg:text-start lg:leading-[2]"
             >
               We offer growth opportunities and a creative environment to nurture your talents.
@@ -53,14 +53,14 @@ const Career = () => {
           </li>
           <li className="lg:flex lg:gap-[24px] lg:justify-end">
             <p
-              className="mb-[8px] text-[14px] leading-[1.43] font-normal 
+              className="mb-[8px] text-[14px] leading-[1.43] font-400 
             md:text-[16px] md:leading-[1.25]
             lg:mb-0 lg:text-[18px] lg:leading-[1.33]"
             >
               Teamwork
             </p>
             <p
-              className="text-gray text-[12px] font-extralight leading-[1.67] 
+              className="text-gray text-[12px] font-200 leading-[1.67] 
             lg:w-[285px] lg:text-start lg:leading-[2]"
             >
               Join our close-knit family, where support and inspiration abound.
@@ -68,14 +68,14 @@ const Career = () => {
           </li>
           <li className="lg:flex lg:gap-[24px] lg:justify-end">
             <p
-              className="mb-[8px] text-[14px] leading-[1.43] font-normal 
+              className="mb-[8px] text-[14px] leading-[1.43] font-400 
             md:mb-[28px] md:text-[16px] md:leading-[1.25]
             lg:mb-0 lg:text-[18px] lg:leading-[1.33]"
             >
               Stimulating work environment
             </p>
             <p
-              className="text-gray text-[12px] font-extralight leading-[1.67] 
+              className="text-gray text-[12px] font-200 leading-[1.67] 
             lg:w-[285px] lg:text-start lg:leading-[2]"
             >
               Flexibility and remote options for a comfortable experience.
@@ -83,14 +83,14 @@ const Career = () => {
           </li>
           <li className="lg:flex lg:gap-[24px] lg:justify-end">
             <p
-              className="mb-[8px] text-[14px] leading-[1.43] font-normal 
+              className="mb-[8px] text-[14px] leading-[1.43] font-400 
             md:text-[16px] md:leading-[1.25]
             lg:mb-0 lg:text-[18px] lg:leading-[1.33]"
             >
               Exciting challenges
             </p>
             <p
-              className="text-gray text-[12px] font-extralight leading-[1.67] 
+              className="text-gray text-[12px] font-200 leading-[1.67] 
             lg:w-[285px] lg:text-start lg:leading-[2]"
             >
               Unleash your potential through unforgettable projects showcasing Carpathian beauty.
@@ -98,7 +98,7 @@ const Career = () => {
           </li>
         </ul>
         <p
-          className="max-md:hidden text-[13px] text-gray font-extralight leading-[1.54] 
+          className="max-md:hidden text-[13px] text-gray font-200 leading-[1.54] 
         md:col-start-3 md:col-span-2 md:row-start-7 md:row-span-1 
         lg:col-start-5 lg:col-span-1 lg:row-start-4 lg:row-span-1 lg:text-[18px] lg:leading-[1.33]"
         >

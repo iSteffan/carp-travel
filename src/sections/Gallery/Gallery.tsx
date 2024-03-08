@@ -11,7 +11,7 @@ const Gallery = () => {
         md:mb-[66px] md:w-[464px] md:mx-auto  
         lg:mb-[15px] lg:w-[633px] lg:ml-[23px] "
         >
-          OUR <span className="font-medium">GALLERY</span>
+          OUR <span className="font-500">GALLERY</span>
         </h2>
 
         <GalleryMobilePhotoList />

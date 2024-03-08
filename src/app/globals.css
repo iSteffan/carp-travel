@@ -13,7 +13,7 @@ body {
 
 @layer components {
   .title {
-    @apply text-[40px] font-thin leading-[1.4] tracking-[-1.6px] md:text-[67px] md:leading-normal md:tracking-[-2.68px] lg:text-[98px] lg:tracking-[-3.92px] uppercase;
+    @apply text-[40px] font-100 leading-[1.4] tracking-[-1.6px] md:text-[67px] md:leading-normal md:tracking-[-2.68px] lg:text-[98px] lg:tracking-[-3.92px] uppercase;
   }
 }
 

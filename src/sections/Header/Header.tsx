@@ -48,7 +48,7 @@ const Header = () => {
 
         <button
           type="button"
-          className="font-serif p-0 h-[17px] hover:underline font-normal md:hidden"
+          className="font-serif p-0 h-[17px] hover:underline font-400 md:hidden"
           onClick={toggleDrawer('openBurgerMenu', true)}
         >
           MENU

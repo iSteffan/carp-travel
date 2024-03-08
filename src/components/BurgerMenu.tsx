@@ -8,7 +8,7 @@ const BurgerMenu = ({ onClose }: BurgerMenuProps) => {
     <div className="max-w-[480px] w-full mx-auto pt-[43px] px-[20px] text-end">
       <button
         type="button"
-        className="mb-[110px] ml-auto text-primary font-serif p-0 h-[17px] hover:underline font-normal"
+        className="mb-[110px] ml-auto text-primary font-serif p-0 h-[17px] hover:underline font-400"
         onClick={onClose}
       >
         CLOSE

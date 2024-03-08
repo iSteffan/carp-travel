@@ -11,7 +11,7 @@ export const NavBtn = () => {
       <button
         type="button"
         onClick={() => swiper.slidePrev()}
-        className="text-[33px] font-thin"
+        className="text-[33px] font-100"
         //   aria-label="Move to the previous slide"
       >
         BACK
@@ -19,7 +19,7 @@ export const NavBtn = () => {
       <button
         type="button"
         onClick={() => swiper.slideNext()}
-        className="text-[33px] font-thin"
+        className="text-[33px] font-100"
 
         //   aria-label="Move to the next slide"
       >

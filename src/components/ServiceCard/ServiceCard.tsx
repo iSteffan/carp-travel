@@ -28,7 +28,7 @@ const ServiceCard = ({ data }: ServiceCardProps) => {
       >
         WE <span className="font-500">OFFER</span>
       </h2>
-      <p className="text-[43px] font-thin text-end row-start-3 row-end-4">
+      <p className="text-[43px] font-100 text-end row-start-3 row-end-4">
         0{data.id}/<span className="text-secondary-white">05</span>
       </p>
 
@@ -40,10 +40,10 @@ const ServiceCard = ({ data }: ServiceCardProps) => {
         className="row-start-5 row-end-6 object-cover h-full"
       />
 
-      <p className="row-start-7 row-end-8 text-end text-[12px] text-gray font-extralight leading-[2] tracking-[2.4px]">
+      <p className="row-start-7 row-end-8 text-end text-[12px] text-gray font-200 leading-[2] tracking-[2.4px]">
         {data.call}
       </p>
-      <p className="row-start-11 row-end-12 text-[14px] text-gray font-extralight leading-[1.43]">
+      <p className="row-start-11 row-end-12 text-[14px] text-gray font-200 leading-[1.43]">
         {data.desc}
       </p>
     </div>

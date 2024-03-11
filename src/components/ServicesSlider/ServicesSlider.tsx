@@ -16,7 +16,7 @@ import Image from 'next/image';
 import { ActiveBullet } from '@/assets/icons';
 
 export const ServicesSlider = () => {
-  const [swiper, setSwiper] = useState(null);
+  const [swiper, setSwiper] = useState<typeof Swiper | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const pagination = {

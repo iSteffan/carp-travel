@@ -38,6 +38,7 @@ export const ServicesSlider = () => {
       onSlideChange={s => setActiveIndex(s.activeIndex)}
       pagination={pagination}
       modules={[EffectFade, Pagination]}
+      allowTouchMove={false}
       className="mySwiper service"
     >
       {servicesData.map((item, index) => {

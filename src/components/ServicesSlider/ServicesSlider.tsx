@@ -52,13 +52,16 @@ export const ServicesSlider = () => {
           );
         })}
       </Swiper>
-      <div className="flex flex-col gap-[16px] absolute top-[475px] left-[20px] z-10 text-[20px] font-200 uppercase leading-[0.85]">
+      <div
+        className="flex flex-col gap-[16px] absolute top-[475px] left-[20px] z-10 w-[190px] text-[20px] font-200 uppercase leading-[0.85]
+      md:top-[174px] md:left-[502px] md:text-[22px] md:leading-[0.81] md:w-[200px]"
+      >
         {servicesData.map((item, index) => (
           <button
             key={index}
             onClick={() => handlePaginationClick(index)}
             className={clsx(
-              'flex items-center gap-[8px] w-[160px] text-start',
+              'flex items-center gap-[8px] text-start uppercase',
               index === activeIndex ? 'text-primary font-500' : 'text-inactive'
             )}
           >

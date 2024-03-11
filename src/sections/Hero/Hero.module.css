@@ -10,10 +10,9 @@
 
   max-width: 480px;
   background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
-    url('../../assets/images/hero.jpg');
+    url('../../assets/images/hero-bg-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
 }
 
 .button {
@@ -61,6 +60,11 @@
     padding-bottom: 64px;
 
     max-width: 768px;
+
+    background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+      url('../../assets/images/hero-bg-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .button {
@@ -97,6 +101,10 @@
     padding-bottom: 104px;
 
     max-width: 1440px;
+    background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+      url('../../assets/images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .button {

@@ -1,4 +1,7 @@
 import HeroBG from './hero.jpg';
+import HeroBgTablet from './hero-bg-tablet.jpg';
+import HeroBgMobile from './hero-bg-mobile.jpg';
+
 import AboutBG from './about.jpg';
 import CareerBG from './career.jpg';
 import ContactBG from './contact.jpg';
@@ -16,6 +19,8 @@ import GallerySlider3 from './gallery-slider-3.jpg';
 
 export {
   HeroBG,
+  HeroBgTablet,
+  HeroBgMobile,
   AboutBG,
   CareerBG,
   ContactBG,

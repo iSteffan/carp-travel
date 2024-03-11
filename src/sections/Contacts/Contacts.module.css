@@ -9,10 +9,9 @@
 
   max-width: 480px;
   background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85)),
-    url('../../assets/images/contact.jpg');
+    url('../../assets/images/contact-mobile-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
 }
 
 @media (min-width: 768px) {
@@ -23,6 +22,10 @@
     padding-bottom: 64px;
 
     max-width: 768px;
+    background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85)),
+      url('../../assets/images/contact-tablet-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -34,5 +37,10 @@
     padding-bottom: 104px;
 
     max-width: 1440px;
+    background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85)),
+      url('../../assets/images/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
   }
 }

@@ -41,7 +41,7 @@ const Hero = () => {
             <span className="font-500">Uncover</span> Carpathian’s Secrets
           </h1>
           <p
-            className="text-gray w-[157px] text-[10px] font-200 leading-[1.6] 
+            className="w-[157px] text-[10px] font-200 leading-[1.6] 
           md:w-[264px] md:text-[14px] md:leading-[1.14] md:tracking-[1.26px]
           lg:w-[608px] lg:text-[16px] lg:leading-[1.5] lg:tracking-[1.44px]"
           >
@@ -51,7 +51,7 @@ const Hero = () => {
 
         <div className="md:col-start-2 md:col-end-3">
           <p
-            className="text-gray mb-[24px] text-[14px] font-200 leading-[1.43] text-justify 
+            className="mb-[24px] text-[14px] font-200 leading-[1.43] text-justify 
           md:mb-[28px] md:text-[16px] md:leading-[1.25]
           lg:text-[18px] lg:leading-[1.33]"
           >

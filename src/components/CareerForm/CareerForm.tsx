@@ -38,33 +38,25 @@ const CareerForm = () => {
     setIsChecked(!isChecked);
   };
 
-  const fullnameLabel = errors.fullname
-    ? 'text-accent-red text-[12px] font-200 leading-[2] tracking-[2.4px]'
-    : 'text-[12px] font-200 leading-[2] tracking-[2.4px]';
+  const fullnameLabel = errors.fullname ? 'text-accent-red label' : 'label';
 
-  const emailLabel = errors.email
-    ? 'text-accent-red text-[12px] font-200 leading-[2] tracking-[2.4px]'
-    : 'text-[12px] font-200 leading-[2] tracking-[2.4px]';
+  const emailLabel = errors.email ? 'text-accent-red label' : 'label';
 
-  const positionLabel = errors.position
-    ? 'text-accent-red text-[12px] font-200 leading-[2] tracking-[2.4px]'
-    : 'text-[12px] font-200 leading-[2] tracking-[2.4px]';
+  const positionLabel = errors.position ? 'text-accent-red label' : 'label';
 
-  const phoneLabel = errors.phone
-    ? 'text-accent-red text-[12px] font-200 leading-[2] tracking-[2.4px]'
-    : 'text-[12px] font-200 leading-[2] tracking-[2.4px]';
+  const phoneLabel = errors.phone ? 'text-accent-red label' : 'label';
 
   const fullnameInput = errors.fullname
-    ? 'w-full text-accent-red pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]'
-    : 'w-full pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]';
+    ? 'w-full text-accent-red pl-[8px] input lg:py-[2px]'
+    : 'w-full pl-[8px] input lg:py-[2px]';
 
   const emailInput = errors.email
-    ? 'w-full text-accent-red pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]'
-    : 'w-full pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]';
+    ? 'w-full text-accent-red pl-[8px] input lg:py-[2px]'
+    : 'w-full pl-[8px] input lg:py-[2px]';
 
   const phoneInput = errors.phone
-    ? 'w-full text-accent-red pl-[40px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px] lg:pl-[58px]'
-    : 'w-full pl-[40px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px] lg:pl-[58px]';
+    ? 'w-full text-accent-red pl-[40px] input lg:py-[2px] lg:pl-[58px]'
+    : 'w-full pl-[40px] input lg:py-[2px] lg:pl-[58px]';
 
   return (
     <>
@@ -119,7 +111,7 @@ const CareerForm = () => {
           <input
             {...register('position', { required: true })}
             placeholder="Movie maker"
-            className="pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]"
+            className="pl-[8px] input lg:py-[2px]"
           />
           {errors.position && <p className={css['input-error']}>This field is required</p>}
         </label>
@@ -154,10 +146,10 @@ const CareerForm = () => {
           className="flex flex-col gap-[4px] 
       md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-7"
         >
-          <span className="text-[12px] font-200 leading-[2] tracking-[2.4px]">Message</span>
+          <span className="label">Message</span>
           <textarea
             {...register('message')}
-            className="p-[8px] h-[196px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 md:h-full resize-none"
+            className="p-[8px] h-[196px] input md:h-full resize-none"
           />
         </label>
         <label

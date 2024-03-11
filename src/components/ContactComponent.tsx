@@ -11,26 +11,14 @@ export const ContactComponent = () => {
       lg:mb-[64px] lg:ml-[34px] lg:w-[277px]"
       >
         <div className="flex flex-col ">
-          <a
-            href="tel:+380981234567"
-            aria-label="tel to +380981234567"
-            className="text-[14px] font-400 leading-[1.71] hover:underline
-            md:text-[16px] md:leading-[1.5] 
-            lg:text-[18px] lg:leading-[1.33]"
-          >
+          <a href="tel:+380981234567" aria-label="tel to +380981234567" className="contacts">
             +38 (098) 12 34 567
           </a>
-          <a
-            href="tel:+380731234567"
-            aria-label="tel to +380731234567"
-            className="text-[14px] font-400 leading-[1.71] hover:underline 
-            md:text-[16px] md:leading-[1.5]
-            lg:text-[18px] lg:leading-[1.33]"
-          >
+          <a href="tel:+380731234567" aria-label="tel to +380731234567" className="contacts">
             +38 (073) 12 34 567
           </a>
         </div>
-        <p className="mt-[3px] text-[12px] font-200 leading-[1.67] text-gray">Phone number</p>
+        <p className="mt-[3px] text-[12px] font-200 leading-[1.67]">Phone number</p>
       </div>
       <div
         className="ml-[16px] mb-[26px] flex gap-[20px] w-[218px] 
@@ -40,13 +28,11 @@ export const ContactComponent = () => {
         <a
           href="mailto:support@carptravel.com"
           aria-label="mail to support@carptravel.com"
-          className="text-[14px] font-400 leading-[1.71] hover:underline 
-          md:text-[16px] md:leading-[1.5] 
-          lg:text-[18px] lg:leading-[1.33]"
+          className="contacts"
         >
           support@carptravel.com
         </a>
-        <p className="mt-[3px] text-[12px] font-200 leading-[1.67] text-gray">E-mail</p>
+        <p className="mt-[3px] text-[12px] font-200 leading-[1.67]">E-mail</p>
       </div>
       <div
         className="flex flex-row-reverse gap-[20px] ml-auto mr-[15px] w-[138px] 
@@ -67,41 +53,23 @@ export const ContactComponent = () => {
               </a>
             </li>
             <li>
-              <a
-                href="./"
-                aria-label="instagram link"
-                className="text-[14px] font-400 leading-[1.71] hover:underline 
-                md:text-[16px] md:leading-[1.5] 
-                lg:text-[18px] lg:leading-[1.33]"
-              >
+              <a href="./" aria-label="instagram link" className="contacts">
                 instagram
               </a>
             </li>
             <li>
-              <a
-                href="./"
-                aria-label="youtube link"
-                className="text-[14px] font-400 leading-[1.71] hover:underline 
-                md:text-[16px] md:leading-[1.5] 
-                lg:text-[18px] lg:leading-[1.33]"
-              >
+              <a href="./" aria-label="youtube link" className="contacts">
                 youtube
               </a>
             </li>
             <li>
-              <a
-                href="./"
-                aria-label="tiktok link"
-                className="text-[14px] font-400 leading-[1.71] hover:underline 
-                md:text-[16px] md:leading-[1.5] 
-                lg:text-[18px] lg:leading-[1.33]"
-              >
+              <a href="./" aria-label="tiktok link" className="contacts">
                 tiktok
               </a>
             </li>
           </ul>
         </div>
-        <p className="mt-[2px] text-[12px] font-200 leading-[1.67] text-gray">Follow us</p>
+        <p className="mt-[2px] text-[12px] font-200 leading-[1.67]">Follow us</p>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ export const NavBtn = () => {
   return (
     <div
       className="absolute bottom-[17px] left-[37px] z-10 w-[629px] flex justify-between 
-    lg:bottom-[-8px] lg:left-[228px] lg:w-[821px]"
+    lg:bottom-[-4px] lg:left-[228px] lg:w-[821px]"
     >
       <button
         type="button"

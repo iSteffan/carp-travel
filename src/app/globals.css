@@ -19,6 +19,30 @@ body {
   .title {
     @apply text-[40px] font-100 leading-[1.4] tracking-[-1.6px] md:text-[67px] md:leading-normal md:tracking-[-2.68px] lg:text-[98px] lg:tracking-[-3.92px] uppercase;
   }
+
+  .contacts {
+    @apply text-[14px] font-400 leading-[1.71] hover:underline md:text-[16px] md:leading-[1.5] lg:text-[18px] lg:leading-[1.33];
+  }
+
+  .label {
+    @apply text-[12px] font-200 leading-[2] tracking-[2.4px];
+  }
+
+  .input {
+    @apply text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2];
+  }
+
+  .about-text {
+    @apply text-[14px] leading-[1.43] md:text-[16px] md:leading-[1.25] lg:text-[18px] lg:leading-[1.33];
+  }
+
+  .career-text {
+    @apply text-[14px] leading-[1.43] md:text-[16px] md:leading-[1.25] lg:text-[18px] lg:leading-[1.33];
+  }
+
+  .career-desc {
+    @apply text-[12px] font-200 leading-[1.67] lg:w-[285px] lg:text-start lg:leading-[2];
+  }
 }
 
 /* @layer utilities {

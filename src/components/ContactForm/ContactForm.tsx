@@ -18,26 +18,22 @@ const ContactForm = () => {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = data => {
-    toast.success('We have received your data, you can check it in the console tab');
+    toast.success('We have received your contact data, you can check it in the console tab');
 
     console.log(data);
   };
 
-  const fullnameLabel = errors.fullname
-    ? 'text-accent-red text-[12px] font-200 leading-[2] tracking-[2.4px] md:text-[12px]'
-    : 'text-[12px] font-200 leading-[2] tracking-[2.4px] md:text-[12px]';
+  const fullnameLabel = errors.fullname ? 'text-accent-red label' : 'label';
 
-  const emailLabel = errors.email
-    ? 'text-accent-red text-[12px] font-200 leading-[2] tracking-[2.4px] md:text-[12px]'
-    : 'text-[12px] font-200 leading-[2] tracking-[2.4px] md:text-[12px]';
+  const emailLabel = errors.email ? 'text-accent-red label' : 'label';
 
   const fullnameInput = errors.fullname
-    ? 'w-full text-accent-red pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]'
-    : 'w-full pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]';
+    ? 'w-full text-accent-red pl-[8px] input lg:py-[2px]'
+    : 'w-full pl-[8px] input lg:py-[2px]';
 
   const emailInput = errors.email
-    ? 'w-full text-accent-red pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]'
-    : 'w-full pl-[8px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 lg:text-[20px] lg:leading-[1.2] lg:py-[2px]';
+    ? 'w-full text-accent-red pl-[8px] input lg:py-[2px]'
+    : 'w-full pl-[8px] input lg:py-[2px]';
 
   return (
     <>
@@ -93,12 +89,10 @@ const ContactForm = () => {
       md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-4 
       lg:col-start-1 lg:col-span-3 lg:row-start-3 lg:row-span-1"
         >
-          <span className="text-[12px] font-200 leading-[2] tracking-[2.4px] md:text-[12px]">
-            Message
-          </span>
+          <span className="label">Message</span>
           <textarea
             {...register('message')}
-            className="p-[8px] h-[196px] text-[13px] font-200 leading-[1.85] bg-input placeholder:opacity-50 md:h-full resize-none"
+            className="p-[8px] h-[196px] input md:h-full resize-none"
           />
         </label>
 

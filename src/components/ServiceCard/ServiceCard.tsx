@@ -1,6 +1,6 @@
-import { servicesData } from '@/data/servicesData';
 import Image from 'next/image';
 import clsx from 'clsx';
+import { servicesData } from '@/data/servicesData';
 import { ActiveBullet } from '@/assets/icons';
 
 export interface ServiceCardProps {
@@ -59,7 +59,7 @@ const ServiceCard = ({ data, activeIndex, onClick }: ServiceCardProps) => {
 
         <p
           className={clsx(
-            'row-start-7 row-end-8 text-end text-[12px] text-gray font-200 leading-[2] tracking-[2.4px] md:col-start-3 md:col-span-1 md:row-start-6 md:row-span-1 md:text-left lg:mt-[-5px] lg:col-start-5 lg:col-span-1 lg:text-start',
+            'row-start-7 row-end-8 text-end text-[12px] font-200 leading-[2] tracking-[2.4px] md:col-start-3 md:col-span-1 md:row-start-6 md:row-span-1 md:text-left lg:mt-[-5px] lg:col-start-5 lg:col-span-1 lg:text-start',
             activeIndex === 0 && 'lg:row-start-3 lg:row-span-1',
             activeIndex === 1 && 'lg:row-start-5 lg:row-span-1',
             activeIndex === 2 && 'lg:row-start-7 lg:row-span-1',
@@ -70,9 +70,9 @@ const ServiceCard = ({ data, activeIndex, onClick }: ServiceCardProps) => {
           {data.call}
         </p>
         <p
-          className="row-start-11 row-end-12 text-[14px] text-gray font-200 leading-[1.43] 
+          className="mt-auto row-start-11 row-end-12 text-[14px] font-200 leading-[1.43] 
       md:col-start-3 md:col-span-1 md:row-start-8 md:row-span-2 md:text-[13px] md:leading-[1.54] md:text-justify
-      lg:col-start-5 lg:col-span-1 lg:row-start-13 lg:row-span-1 lg:mt-auto lg:text-[18px] lg:leading-[1.33]"
+      lg:col-start-5 lg:col-span-1 lg:row-start-13 lg:row-span-1 lg:text-[18px] lg:leading-[1.33]"
         >
           {data.desc}
         </p>

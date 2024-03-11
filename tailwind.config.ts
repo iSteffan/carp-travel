@@ -10,7 +10,6 @@ const config: Config = {
     },
     colors: {
       primary: '#FFFFFF',
-      gray: '#D9D9D9',
       'secondary-white': 'rgba(255, 255, 255, 0.20)',
       'accent-red': '#FF5757',
       inactive: 'rgba(255, 255, 255, 0.5)',

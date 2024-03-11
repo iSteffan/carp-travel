@@ -3,7 +3,6 @@
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
-import clsx from 'clsx';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Pagination } from 'swiper/modules';
@@ -13,8 +12,6 @@ import './styles.css';
 
 import ServiceCard from '../ServiceCard/ServiceCard';
 import { servicesData } from '@/data/servicesData';
-import Image from 'next/image';
-import { ActiveBullet } from '@/assets/icons';
 
 export const ServicesSlider = () => {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
@@ -34,47 +31,22 @@ export const ServicesSlider = () => {
     }
   };
   return (
-    <>
-      <Swiper
-        spaceBetween={30}
-        effect={'fade'}
-        onSwiper={s => setSwiper(s)}
-        onSlideChange={s => setActiveIndex(s.activeIndex)}
-        pagination={pagination}
-        modules={[EffectFade, Pagination]}
-        className="mySwiper service"
-      >
-        {servicesData.map((item, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <ServiceCard data={item} />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-      <div className="lg:absolute lg:top-[50%] lg:translate-y-[-50%] lg:w-[1232px] lg:mx-auto">
-        <div
-          className="flex flex-col gap-[16px] absolute top-[475px] left-[20px] z-10 w-[190px] text-[20px] font-200 uppercase leading-[0.85]
-      md:top-[183px] md:left-[515px] md:text-[22px] md:leading-[0.81] md:w-[200px] lg:top-[244px] lg:left-[515px]"
-        >
-          {servicesData.map((item, index) => (
-            <button
-              key={index}
-              onClick={() => handlePaginationClick(index)}
-              className={clsx(
-                'flex items-center gap-[8px] text-start uppercase',
-                index === activeIndex ? 'text-primary font-500' : 'text-inactive'
-              )}
-            >
-              {index === activeIndex && (
-                <Image src={ActiveBullet} alt="active slide pointer" width={6} height={6} />
-              )}
-
-              {item.btn}
-            </button>
-          ))}
-        </div>
-      </div>
-    </>
+    <Swiper
+      spaceBetween={30}
+      effect={'fade'}
+      onSwiper={s => setSwiper(s)}
+      onSlideChange={s => setActiveIndex(s.activeIndex)}
+      pagination={pagination}
+      modules={[EffectFade, Pagination]}
+      className="mySwiper service"
+    >
+      {servicesData.map((item, index) => {
+        return (
+          <SwiperSlide key={index}>
+            <ServiceCard data={item} activeIndex={activeIndex} onClick={handlePaginationClick} />
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
   );
 };

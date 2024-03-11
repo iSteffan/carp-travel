@@ -6,7 +6,7 @@ const Career = () => {
     <section className={css.section} id="career">
       <div
         className="md:grid md:grid-cols-[225px,16px,127px,94px,21px,221px] md:grid-rows-[8px,73px,7px,5px,36px,56px,60px,32px,316px] 
-      lg:px-[24px] lg:grid-cols-[293px,246px,63px,24px,234px,79px,293px] lg:grid-rows-[16px,103px,24px,72px,11px,3px,380px]"
+      lg:px-[24px] lg:grid-cols-[293px,246px,63px,24px,234px,79px,293px] lg:grid-rows-[16px,103px,24px,72px,11px,3px,380px] lg:w-[1280px] lg:mx-auto"
       >
         <h2
           className="title mb-[24px] md:col-start-1 md:col-span-4 md:row-start-1 md:row-span-2 md:mb-0 

@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm/ContactForm';
 const Contacts = () => {
   return (
     <section className={css.section} id="contacts">
-      <div className="lg:px-[24px]">
+      <div className="lg:px-[24px] lg:w-[1280px] lg:mx-auto">
         <h2 className="title mb-[36px] lg:mb-[71px]">
           CONTACT <span className="font-500">US</span>
         </h2>

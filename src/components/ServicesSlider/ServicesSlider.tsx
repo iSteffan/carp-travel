@@ -28,7 +28,7 @@ export const ServicesSlider = () => {
 
   const handlePaginationClick = (index: number) => {
     if (swiper) {
-      swiper.slideTo(index);
+      (swiper as any).slideTo(index);
       setActiveIndex(index);
     }
   };
@@ -56,7 +56,6 @@ export const ServicesSlider = () => {
           <button
             key={index}
             onClick={() => handlePaginationClick(index)}
-            // {index === activeIndex ? 'text-gray' : 'text-inactive'}
             className={clsx(
               'flex items-center gap-[8px] w-[160px] text-start',
               index === activeIndex ? 'text-primary font-500' : 'text-inactive'
@@ -73,9 +72,3 @@ export const ServicesSlider = () => {
     </>
   );
 };
-// className={clsx(
-//   'relative w-[200px]',
-//   index === activeIndex
-//     ? 'before:content-bullet before:block before:w-[9px] before:h-[9px] before:absolute before:top-[50%] before:left-0 before:translate-y-[-50%] pl-[17px] text-primary font-500'
-//     : 'text-inactive'
-// )}

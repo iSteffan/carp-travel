@@ -5,8 +5,9 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import clsx from 'clsx';
 import { useState } from 'react';
-import { Swiper, SwiperSlide, SwiperInstance } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Pagination } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
 
 import './styles.css';
 
@@ -16,7 +17,7 @@ import Image from 'next/image';
 import { ActiveBullet } from '@/assets/icons';
 
 export const ServicesSlider = () => {
-  const [swiper, setSwiper] = useState<SwiperInstance | null>(null);
+  const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const pagination = {
@@ -37,7 +38,7 @@ export const ServicesSlider = () => {
       <Swiper
         spaceBetween={30}
         effect={'fade'}
-        onSwiper={(s: SwiperInstance) => setSwiper(s)}
+        onSwiper={s => setSwiper(s)}
         onSlideChange={s => setActiveIndex(s.activeIndex)}
         pagination={pagination}
         modules={[EffectFade, Pagination]}

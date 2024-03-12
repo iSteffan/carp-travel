@@ -64,7 +64,7 @@ const Career = () => {
           </li>
         </ul>
         <p
-          className="max-md:hidden text-[13px] font-200 leading-[1.54] 
+          className="smMax:hidden text-[13px] font-200 leading-[1.54] 
         md:col-start-3 md:col-span-2 md:row-start-7 md:row-span-1 
         lg:col-start-5 lg:col-span-1 lg:row-start-4 lg:row-span-1 lg:text-[18px] lg:leading-[1.33]"
         >
@@ -76,7 +76,7 @@ const Career = () => {
           className="md:col-start-3 md:col-span-4 md:row-start-9 md:row-span-1 
         lg:col-start-5 lg:col-span-3 lg:row-start-7 lg:row-span-1"
         >
-          <div className="max-md:hidden">
+          <div className="smMax:hidden">
             <CareerForm />
           </div>
         </div>

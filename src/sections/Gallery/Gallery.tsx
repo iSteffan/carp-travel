@@ -16,7 +16,7 @@ const Gallery = () => {
 
         <GalleryMobilePhotoList />
 
-        <div className="max-md:hidden">
+        <div className="smMax:hidden">
           <GallerySlider />
         </div>
       </div>

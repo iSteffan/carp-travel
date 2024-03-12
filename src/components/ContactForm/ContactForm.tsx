@@ -1,8 +1,8 @@
 'use client';
 
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import css from './ContactForm.module.css';
-import { useForm, SubmitHandler } from 'react-hook-form';
 
 type Inputs = {
   fullname: string;
@@ -17,9 +17,11 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = data => {
+  const onSubmit: SubmitHandler<Inputs> = (data, e?) => {
     toast.success('We have received your contact data, you can check it in the console tab');
-
+    if (e) {
+      e.target.reset();
+    }
     console.log(data);
   };
 
@@ -97,7 +99,7 @@ const ContactForm = () => {
         </label>
 
         <button
-          className="ml-auto text-[30px] 
+          className="ml-auto text-[30px] hover:underline
         md:col-start-3 md:col-span-1 md:row-start-6 md:row-span-1 
         lg:col-start-3 lg:col-span-1 lg:row-start-5 lg:row-span-1"
           type="submit"

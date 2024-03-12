@@ -34,7 +34,7 @@ const Hero = () => {
 
         <div className="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
           <h1
-            className="title max-md:max-w-[280px] mb-[24px]  
+            className="title smMax:max-w-[280px] mb-[24px]  
            md:mb-[68px]
           lg:mb-[144px]"
           >

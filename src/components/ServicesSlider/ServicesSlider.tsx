@@ -10,7 +10,7 @@ import type { Swiper as SwiperType } from 'swiper';
 
 import './styles.css';
 
-import ServiceCard from '../ServiceCard/ServiceCard';
+import ServiceCard from '../ServiceCard';
 import { servicesData } from '@/data/servicesData';
 
 export const ServicesSlider = () => {

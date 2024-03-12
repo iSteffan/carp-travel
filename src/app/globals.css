@@ -45,12 +45,6 @@ body {
   }
 }
 
-/* @layer utilities {
-  .title-weight {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
-  }
-} */
-
 .input-error::before {
   content: '';
   position: absolute;

@@ -7,6 +7,7 @@ const config: Config = {
       sm: '480px',
       md: '768px',
       lg: '1280px',
+      smMax: { max: '767px' },
     },
     colors: {
       primary: '#FFFFFF',
@@ -30,12 +31,7 @@ const config: Config = {
       content: {
         bullet: 'url("/icons/active-bullet.svg")',
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       backgroundColor: {
-        green: '#00CC2D',
         trans: 'rgba(255, 255, 255, 0.10)',
         input: 'rgba(255, 255, 255, 0.05)',
       },

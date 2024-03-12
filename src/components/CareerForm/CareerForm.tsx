@@ -2,11 +2,11 @@
 
 import InputMask from 'react-input-mask';
 import Image from 'next/image';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import css from './CareerForm.module.css';
 import { CheckedIcon, UncheckedIcon } from '@/assets/icons';
-import { useForm, SubmitHandler } from 'react-hook-form';
 
 type Inputs = {
   fullname: string;
@@ -26,14 +26,18 @@ const CareerForm = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = data => {
+  const onSubmit: SubmitHandler<Inputs> = (data, e?) => {
     toast.success('We have received your data, you can check it in the console tab');
     const formattedData = {
       ...data,
       phone: `+38 ${data.phone}`,
     };
+    if (e) {
+      e.target.reset();
+    }
     console.log(formattedData);
   };
+  
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -129,6 +133,7 @@ const CareerForm = () => {
               mask="(999) 99 99 999"
               maskChar=""
               placeholder="(097) 12 34 567"
+              autoComplete="off"
               className={phoneInput}
             />
             <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
@@ -188,7 +193,7 @@ const CareerForm = () => {
           </span>
         </label>
         <button
-          className="ml-auto text-[30px] 
+          className="ml-auto text-[30px] hover:underline
         md:col-start-3 md:col-span-1 md:row-start-9 md:row-span-2"
           type="submit"
           onClick={() => {}}

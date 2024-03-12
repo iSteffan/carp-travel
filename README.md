@@ -1,6 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Carp Travel
 
-## Getting Started
+Landing Page
+
+The layout is responsive and cross-browser, designed with a mobile-first approach. The breakpoints are as follows: mobile (320px to 480px), tablet (768px), desktop (1280px).
+
+Used technologies: Next.js, TypeScript, Tailwind, react-hook-form, Swiper.js, MUI, react-input-mask, react-toastify, clsx.
+
+## Content
+
+Page consist from:
+- Header. Include logo and nav menu. In mobile, menu is hidden and becomes visible by clicking menu btn. Clicking on the relevant item triggers a seamless scroll to the corresponding section.
+- Hero. When you click on "Join Now," a smooth scroll will take you to the "Contacts" section.
+- About.
+- Services. Slider with various background images. Utilizes a fade effect. The active item is stylistically highlighted.
+- Career. Form with validation of entered data. Stylish checkbox. Upon successful data submission, a corresponding message is displayed.
+- Gallery. On Tablet & Desktop: Infinite slider. The active slide has a larger size. Slides can be changed by pressing the respective buttons or by dragging.
+- Contacts. Form with validation of entered data. Upon successful data submission, a corresponding message is displayed.
+
+
+
+
+
+
+### Getting Started
 
 First, run the development server:
 
@@ -16,21 +38,4 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

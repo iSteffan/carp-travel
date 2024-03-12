@@ -37,7 +37,7 @@ const CareerForm = () => {
     }
     console.log(formattedData);
   };
-  
+
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -78,6 +78,7 @@ const CareerForm = () => {
           <input
             {...register('fullname', { required: true, pattern: /^[A-Za-z]+$/i })}
             placeholder="John Smith"
+            autoComplete="on"
             className={fullnameInput}
           />
           {errors.fullname && errors.fullname.type === 'required' && (
@@ -98,6 +99,7 @@ const CareerForm = () => {
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
             })}
             placeholder="johnsmith@email.com"
+            autoComplete="on"
             className={emailInput}
           />
           {errors.email && errors.email.type === 'required' && (
@@ -116,6 +118,7 @@ const CareerForm = () => {
             {...register('position', { required: true })}
             placeholder="Movie maker"
             className="pl-[8px] input lg:py-[2px]"
+            autoComplete="on"
           />
           {errors.position && <p className={css['input-error']}>This field is required</p>}
         </label>
@@ -193,7 +196,7 @@ const CareerForm = () => {
           </span>
         </label>
         <button
-          className="ml-auto text-[30px] hover:underline
+          className="ml-auto text-[30px] hover-underline
         md:col-start-3 md:col-span-1 md:row-start-9 md:row-span-2"
           type="submit"
           onClick={() => {}}

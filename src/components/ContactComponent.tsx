@@ -11,10 +11,18 @@ export const ContactComponent = () => {
       lg:mb-[64px] lg:ml-[34px] lg:w-[277px]"
       >
         <div className="flex flex-col ">
-          <a href="tel:+380981234567" aria-label="tel to +380981234567" className="contacts">
+          <a
+            href="tel:+380981234567"
+            aria-label="tel to +380981234567"
+            className="contacts hover-underline"
+          >
             +38 (098) 12 34 567
           </a>
-          <a href="tel:+380731234567" aria-label="tel to +380731234567" className="contacts">
+          <a
+            href="tel:+380731234567"
+            aria-label="tel to +380731234567"
+            className="contacts hover-underline"
+          >
             +38 (073) 12 34 567
           </a>
         </div>
@@ -28,7 +36,7 @@ export const ContactComponent = () => {
         <a
           href="mailto:support@carptravel.com"
           aria-label="mail to support@carptravel.com"
-          className="contacts"
+          className="contacts hover-underline"
         >
           support@carptravel.com
         </a>
@@ -42,28 +50,22 @@ export const ContactComponent = () => {
         <div className="text-left lg:text-right">
           <ul>
             <li>
-              <a
-                href="./"
-                aria-label="facebook link"
-                className="text-[14px] font-400 leading-[1.71] hover:underline 
-                md:text-[16px] md:leading-[1.5] 
-                lg:text-[18px] lg:leading-[1.33]"
-              >
+              <a href="./" aria-label="facebook link" className="contacts hover-underline">
                 facebook
               </a>
             </li>
             <li>
-              <a href="./" aria-label="instagram link" className="contacts">
+              <a href="./" aria-label="instagram link" className="contacts hover-underline">
                 instagram
               </a>
             </li>
             <li>
-              <a href="./" aria-label="youtube link" className="contacts">
+              <a href="./" aria-label="youtube link" className="contacts hover-underline">
                 youtube
               </a>
             </li>
             <li>
-              <a href="./" aria-label="tiktok link" className="contacts">
+              <a href="./" aria-label="tiktok link" className="contacts hover-underline">
                 tiktok
               </a>
             </li>

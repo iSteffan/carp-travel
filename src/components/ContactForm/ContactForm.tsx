@@ -55,6 +55,7 @@ const ContactForm = () => {
           <input
             {...register('fullname', { required: true, pattern: /^[A-Za-z]+$/i })}
             placeholder="John Smith"
+            autoComplete="on"
             className={fullnameInput}
           />
           {errors.fullname && errors.fullname.type === 'required' && (
@@ -76,6 +77,7 @@ const ContactForm = () => {
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
             })}
             placeholder="johnsmith@email.com"
+            autoComplete="on"
             className={emailInput}
           />
           {errors.email && errors.email.type === 'required' && (
@@ -99,7 +101,7 @@ const ContactForm = () => {
         </label>
 
         <button
-          className="ml-auto text-[30px] hover:underline
+          className="ml-auto text-[30px] hover-underline
         md:col-start-3 md:col-span-1 md:row-start-6 md:row-span-1 
         lg:col-start-3 lg:col-span-1 lg:row-start-5 lg:row-span-1"
           type="submit"

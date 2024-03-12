@@ -8,7 +8,7 @@ const BurgerMenu = ({ onClose }: BurgerMenuProps) => {
     <div className="max-w-[480px] w-full mx-auto pt-[43px] px-[20px] text-end">
       <button
         type="button"
-        className="mb-[110px] ml-auto text-primary font-serif p-0 h-[17px] hover:underline font-400"
+        className="mb-[110px] ml-auto text-primary font-serif p-0 h-[17px] hover-underline font-400"
         onClick={onClose}
       >
         CLOSE
@@ -19,7 +19,7 @@ const BurgerMenu = ({ onClose }: BurgerMenuProps) => {
             href="#about"
             onClick={onClose}
             aria-label="Move to about section"
-            className="hover:underline"
+            className="hover-underline"
           >
             About
           </a>
@@ -29,7 +29,7 @@ const BurgerMenu = ({ onClose }: BurgerMenuProps) => {
             href="#services"
             onClick={onClose}
             aria-label="Move to services section"
-            className="hover:underline"
+            className="hover-underline"
           >
             Services
           </a>
@@ -39,7 +39,7 @@ const BurgerMenu = ({ onClose }: BurgerMenuProps) => {
             href="#career"
             onClick={onClose}
             aria-label="Move to career section"
-            className="hover:underline"
+            className="hover-underline"
           >
             Career
           </a>
@@ -49,7 +49,7 @@ const BurgerMenu = ({ onClose }: BurgerMenuProps) => {
             href="#gallery"
             onClick={onClose}
             aria-label="Move to gallery section"
-            className="hover:underline"
+            className="hover-underline"
           >
             Gallery
           </a>
@@ -59,7 +59,7 @@ const BurgerMenu = ({ onClose }: BurgerMenuProps) => {
             href="#contacts"
             onClick={onClose}
             aria-label="Move to contacts section"
-            className="hover:underline"
+            className="hover-underline"
           >
             Contacts
           </a>

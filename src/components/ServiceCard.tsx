@@ -87,7 +87,7 @@ const ServiceCard = ({ data, activeIndex, onClick }: ServiceCardProps) => {
               key={index}
               onClick={() => onClick(index)}
               className={clsx(
-                'flex items-center gap-[8px] text-start uppercase',
+                'flex items-center gap-[8px] text-start uppercase hover:text-primary transition-colors duration-300 ease-in-out',
                 index === activeIndex ? 'text-primary font-500' : 'text-inactive'
               )}
             >

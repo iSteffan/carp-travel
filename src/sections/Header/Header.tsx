@@ -48,13 +48,13 @@ const Header = () => {
 
         <button
           type="button"
-          className="font-serif p-0 h-[17px] hover:underline font-400 md:hidden"
+          className="font-serif p-0 h-[17px] hover-underline font-400 md:hidden"
           onClick={toggleDrawer('openBurgerMenu', true)}
         >
           MENU
         </button>
       </div>
-      
+
       <Drawer
         className="mui-fixed"
         anchor="right"

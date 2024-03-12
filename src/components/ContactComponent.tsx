@@ -2,7 +2,7 @@ export const ContactComponent = () => {
   return (
     <div
       className="max-w-[280px] mx-auto smMax:mb-[12px]
-    md:max-w-[525px] md:h-[96px] md:flex md:flex-col md:flex-wrap md:content-between md:ml-[34px] md:mr-auto md:mb-[64px]
+    md:max-w-[525px] md:h-[98px] md:flex md:flex-col md:flex-wrap md:content-between md:ml-[34px] md:mr-auto md:mb-[64px]
     lg:h-[356px] lg:max-w-[311px] lg:m-0 lg:col-start-2 lg:col-span-1 lg:row-start-1 lg:row-span-2"
     >
       <div

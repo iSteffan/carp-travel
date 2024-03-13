@@ -131,7 +131,7 @@ const CareerForm = () => {
         </label>
 
         <div className="relative md:col-start-1 md:col-span-1 md:row-start-7 md:row-span-1">
-          <label className="mb-[4px] block" htmlFor="phone">
+          <label className="mb-[4px] block" htmlFor="phoneInput">
             <span className={phoneLabel}>Phone</span>
           </label>
           <div className="relative">
@@ -145,6 +145,7 @@ const CareerForm = () => {
               placeholder="(097) 12 34 567"
               autoComplete="off"
               className={phoneInput}
+              id="phoneInput"
             />
             <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
               + 38

@@ -129,12 +129,12 @@ const CareerForm = () => {
           />
           {errors.position && <p className={css['input-error']}>This field is required</p>}
         </label>
-        <label
-          className="relative flex flex-col gap-[4px] 
-      md:col-start-1 md:col-span-1 md:row-start-7 md:row-span-1"
-        >
-          <span className={phoneLabel}>Phone</span>
-          <span className="relative block">
+
+        <div className="relative md:col-start-1 md:col-span-1 md:row-start-7 md:row-span-1">
+          <label className="mb-[4px] block" htmlFor="phone">
+            <span className={phoneLabel}>Phone</span>
+          </label>
+          <div className="relative">
             <InputMask
               {...register('phone', {
                 required: true,
@@ -145,18 +145,20 @@ const CareerForm = () => {
               placeholder="(097) 12 34 567"
               autoComplete="off"
               className={phoneInput}
+              id="phone"
             />
             <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
               + 38
             </p>
-          </span>
+          </div>
           {errors.phone && errors.phone.type === 'required' && (
             <p className={css['input-error']}>This field is required</p>
           )}
           {errors.phone && errors.phone.type === 'pattern' && (
             <p className={css['input-error']}>Incorrect phone</p>
           )}
-        </label>
+        </div>
+
         <label
           className="flex flex-col gap-[4px] 
       md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-7"
@@ -167,7 +169,8 @@ const CareerForm = () => {
             className="p-[8px] h-[196px] input md:h-full resize-none"
           />
         </label>
-        <label
+
+        <div
           className="relative flex gap-[8px] 
       md:col-start-1 md:col-span-1 md:row-start-10 md:row-span-2"
         >
@@ -178,7 +181,7 @@ const CareerForm = () => {
             onChange={handleCheckboxChange}
             className="w-[28px] opacity-0 md:w-[30px]"
           />
-          <span className="block absolute top-0 left-0">
+          <div className="absolute top-0 left-0">
             {!isChecked ? (
               <Image
                 src={UncheckedIcon}
@@ -196,12 +199,12 @@ const CareerForm = () => {
                 className="lg:w-[24px] lg:h-[24px]"
               />
             )}
-          </span>
+          </div>
 
           <span className="mt-[2px] text-[12px] font-200 leading-[1.83] md:mt-0">
             I confirm my consent to the processing of personal data.
           </span>
-        </label>
+        </div>
         <button
           className="ml-auto text-[30px] hover-underline
         md:col-start-3 md:col-span-1 md:row-start-9 md:row-span-2"

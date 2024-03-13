@@ -158,9 +158,9 @@ const CareerForm = () => {
                 onChange={handlePhoneChange}
                 className={phoneInput}
               />
-              <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
+              <span className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
                 + 38
-              </p>
+              </span>
             </span>
           </label>
 

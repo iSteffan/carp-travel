@@ -50,22 +50,46 @@ export const ContactComponent = () => {
         <div className="text-left lg:text-right">
           <ul>
             <li>
-              <a href="./" aria-label="facebook link" className="contacts hover-underline">
+              <a
+                href="./"
+                aria-label="facebook link"
+                className="contacts hover-underline"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 facebook
               </a>
             </li>
             <li>
-              <a href="./" aria-label="instagram link" className="contacts hover-underline">
+              <a
+                href="./"
+                aria-label="instagram link"
+                className="contacts hover-underline"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 instagram
               </a>
             </li>
             <li>
-              <a href="./" aria-label="youtube link" className="contacts hover-underline">
+              <a
+                href="./"
+                aria-label="youtube link"
+                className="contacts hover-underline"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 youtube
               </a>
             </li>
             <li>
-              <a href="./" aria-label="tiktok link" className="contacts hover-underline">
+              <a
+                href="./"
+                aria-label="tiktok link"
+                className="contacts hover-underline"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 tiktok
               </a>
             </li>

@@ -27,13 +27,20 @@ const CareerForm = () => {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (data, e?) => {
+    if (!isChecked) {
+      toast.warning('Please confirm your consent to the processing of personal data.');
+      return;
+    }
+
     toast.success('We have received your data, you can check it in the console tab');
     const formattedData = {
       ...data,
       phone: `+38 ${data.phone}`,
     };
+
     if (e) {
       e.target.reset();
+      setIsChecked(false);
     }
     console.log(formattedData);
   };

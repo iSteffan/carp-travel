@@ -84,6 +84,7 @@ const ServiceCard = ({ data, activeIndex, onClick }: ServiceCardProps) => {
         >
           {servicesData.map((item, index) => (
             <button
+              type="button"
               key={index}
               onClick={() => onClick(index)}
               className={clsx(

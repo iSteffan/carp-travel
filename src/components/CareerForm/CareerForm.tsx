@@ -19,8 +19,10 @@ type Inputs = {
 
 const CareerForm = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const [phoneValue, setPhoneValue] = useState('');
 
   const {
+    clearErrors,
     register,
     handleSubmit,
     formState: { errors },
@@ -41,8 +43,17 @@ const CareerForm = () => {
     if (e) {
       e.target.reset();
       setIsChecked(false);
+      setPhoneValue('');
     }
     console.log(formattedData);
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const isValidPhone = /^\(\d{3}\) \d{2} \d{2} \d{3}$/.test(e.target.value);
+    if (isValidPhone) {
+      clearErrors('phone');
+    }
+    setPhoneValue(e.target.value);
   };
 
   const handleCheckboxChange = () => {
@@ -55,7 +66,7 @@ const CareerForm = () => {
 
   const positionLabel = errors.position ? 'text-accent-red label' : 'label';
 
-  const phoneLabel = errors.phone ? 'text-accent-red label' : 'label';
+  const phoneLabel = errors.phone ? 'text-accent-red label mb-[4px] block' : 'label mb-[4px] block';
 
   const fullnameInput = errors.fullname
     ? 'w-full text-accent-red pl-[8px] input lg:py-[2px]'
@@ -131,26 +142,28 @@ const CareerForm = () => {
         </label>
 
         <div className="relative md:col-start-1 md:col-span-1 md:row-start-7 md:row-span-1">
-          <label className="mb-[4px] block" htmlFor="phoneInput">
+          <label className="block">
             <span className={phoneLabel}>Phone</span>
+            <span className="relative block">
+              <InputMask
+                {...register('phone', {
+                  required: true,
+                  pattern: /^\(\d{3}\) \d{2} \d{2} \d{3}$/i,
+                })}
+                mask="(999) 99 99 999"
+                maskChar=""
+                placeholder="(097) 12 34 567"
+                autoComplete="off"
+                value={phoneValue}
+                onChange={handlePhoneChange}
+                className={phoneInput}
+              />
+              <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
+                + 38
+              </p>
+            </span>
           </label>
-          <div className="relative">
-            <InputMask
-              {...register('phone', {
-                required: true,
-                pattern: /^\(\d{3}\) \d{2} \d{2} \d{3}$/i,
-              })}
-              mask="(999) 99 99 999"
-              maskChar=""
-              placeholder="(097) 12 34 567"
-              autoComplete="off"
-              className={phoneInput}
-              id="phoneInput"
-            />
-            <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
-              + 38
-            </p>
-          </div>
+
           {errors.phone && errors.phone.type === 'required' && (
             <p className={css['input-error']}>This field is required</p>
           )}

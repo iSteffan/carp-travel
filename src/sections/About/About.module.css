@@ -15,6 +15,15 @@
   background-position: 50% 50%;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section {
+    background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+      url('../../assets/images/about-mobile-bg2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 768px) {
   .section {
     padding-top: 64px;
@@ -27,6 +36,15 @@
       url('../../assets/images/about-tablet-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .section {
+      background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+        url('../../assets/images/about-tablet-bg2x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -42,5 +60,14 @@
       url('../../assets/images/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .section {
+      background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+        url('../../assets/images/about2x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }

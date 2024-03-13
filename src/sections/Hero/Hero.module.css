@@ -15,6 +15,15 @@
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section {
+    background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+      url('../../assets/images/hero-bg-mobile2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .button {
   position: relative;
   padding: 2px 64px;
@@ -70,6 +79,15 @@
     background-size: cover;
   }
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .section {
+      background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+        url('../../assets/images/hero-bg-tablet2x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
   .button {
     padding: 14px 64px;
     height: 50px;
@@ -108,6 +126,15 @@
       url('../../assets/images/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .section {
+      background: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.5)),
+        url('../../assets/images/hero2x.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   .button {

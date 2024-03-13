@@ -145,7 +145,6 @@ const CareerForm = () => {
               placeholder="(097) 12 34 567"
               autoComplete="off"
               className={phoneInput}
-              id="phone"
             />
             <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
               + 38
@@ -174,14 +173,12 @@ const CareerForm = () => {
           className="relative flex gap-[8px] 
       md:col-start-1 md:col-span-1 md:row-start-10 md:row-span-2"
         >
-          {/* <label htmlFor="checkbox"></label> */}
           <input
             type="checkbox"
             {...register('checkbox', {})}
             checked={isChecked}
             onChange={handleCheckboxChange}
             className="relative z-10 w-[23px] h-[23px] opacity-0 md:w-[34px] "
-            // id="checkbox"
           />
           <div className="absolute top-0 left-0 z-0">
             {!isChecked ? (

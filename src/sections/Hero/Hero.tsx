@@ -58,7 +58,7 @@ const Hero = () => {
             We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy
             stunning views, exciting expeditions, and the best service!
           </p>
-          <a href="#contacts" className={css.button}>
+          <a href="#contacts" className={css.button} aria-label="move to contact section">
             JOIN NOW
           </a>
         </div>

@@ -134,7 +134,7 @@ const CareerForm = () => {
       md:col-start-1 md:col-span-1 md:row-start-7 md:row-span-1"
         >
           <span className={phoneLabel}>Phone</span>
-          <div className="relative">
+          <span className="relative block">
             <InputMask
               {...register('phone', {
                 required: true,
@@ -149,7 +149,7 @@ const CareerForm = () => {
             <p className="absolute top-[50%] left-[8px] translate-y-[-50%] text-[13px] font-200 leading-[1.85] lg:text-[20px] lg:leading-[1.2]">
               + 38
             </p>
-          </div>
+          </span>
           {errors.phone && errors.phone.type === 'required' && (
             <p className={css['input-error']}>This field is required</p>
           )}
@@ -178,7 +178,7 @@ const CareerForm = () => {
             onChange={handleCheckboxChange}
             className="w-[28px] opacity-0 md:w-[30px]"
           />
-          <div className="absolute top-0 left-0">
+          <span className="block absolute top-0 left-0">
             {!isChecked ? (
               <Image
                 src={UncheckedIcon}
@@ -196,7 +196,7 @@ const CareerForm = () => {
                 className="lg:w-[24px] lg:h-[24px]"
               />
             )}
-          </div>
+          </span>
 
           <span className="mt-[2px] text-[12px] font-200 leading-[1.83] md:mt-0">
             I confirm my consent to the processing of personal data.
